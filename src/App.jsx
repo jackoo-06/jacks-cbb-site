@@ -1074,7 +1074,7 @@ function About() {
           Contact
         </h3>
         <p style={{ margin: "0 0 20px 0", color: C.textDim }}>
-          Questions, feedback, or just want to talk hoops? Find me on Twitter at jackcbb1 <span style={{ color: C.accent }}>@handle</span>
+          Questions, feedback, or just want to talk hoops? Find me on Twitter <span style={{ color: C.accent }}>@jackcbb1</span>
         </p>
       </div>
     </div>
@@ -1147,7 +1147,7 @@ export default function MadnessModel() {
         display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 8,
       }}>
         <span>For entertainment purposes only. Not financial advice.</span>
-        <span>Methodology &middot; About &middot; @handle</span>
+        <span>Methodology &middot; About &middot; Twitter @jackcbb1</span>
       </footer>
     </div>
   );
