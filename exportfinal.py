@@ -66,6 +66,7 @@ PROJ_MARGIN = "Margin"
 PROJ_KELLY = "Kelly %"
 PROJ_EV = "EV %"
 PROJ_BLOWOUT = "Blowout Potential"
+PROJ_MARKET = "Market Spread"
 PROJ_BET = "Bet"
 PROJ_UNITS = "Units"
 
@@ -141,6 +142,7 @@ def export_projections(wb):
         if not t1 or not t2: continue
 
         margin = to_float(col(r, PROJ_MARGIN))
+        market = to_float(col(r, PROJ_MARKET))
         kelly_raw = to_float(col(r, PROJ_KELLY))       # decimal → %
         ev_raw = to_float(col(r, PROJ_EV))              # decimal → %
         blowout_raw = to_float(col(r, PROJ_BLOWOUT))    # decimal → %
@@ -156,6 +158,7 @@ def export_projections(wb):
             "team2": str(t2).strip(),
             "position": position,
             "spread": round(margin, 1),
+	    "market": round(market, 1),
             "kelly": round(kelly_raw * 100, 1),
             "ev": round(ev_raw * 100, 1),
             "blowout": round(blowout_raw * 100),

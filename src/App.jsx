@@ -338,7 +338,7 @@ function Projections({ goToArticle }) {
         <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: font.mono, fontSize: 12 }}>
           <thead>
             <tr style={{ borderBottom: `1px solid ${C.border}` }}>
-              {["MATCHUP", "SPREAD", "KELLY %", "EV%", "BLOWOUT", "UNIT STAKE"].map((h, i) => (
+              {["MATCHUP", "SPREAD", "MARKET", "KELLY %", "EV%", "BLOWOUT", "UNIT STAKE"].map((h, i) => (
                 <th key={i} style={{
                   padding: "8px 8px", textAlign: i >= 1 ? "right" : "left",
                   fontWeight: 400, fontSize: 10, color: C.textMuted, letterSpacing: "0.05em",
@@ -379,6 +379,7 @@ function Projections({ goToArticle }) {
                   </div>
                 </td>
                 <td style={{ padding: "10px 8px", textAlign: "right", color: C.accent, fontWeight: 500, verticalAlign: "top" }}>{g.spread.toFixed(1)}</td>
+		<td style={{ padding: "10px 8px", textAlign: "right", color: C.textDim, verticalAlign: "top" }}>{g.market ? g.market.toFixed(1) : "—"}</td>
                 <td style={{ padding: "10px 8px", textAlign: "right", verticalAlign: "top", fontWeight: 500, color: g.kelly > 0 ? C.text : C.textMuted }}>
                   {g.kelly > 0 ? g.kelly.toFixed(1) + "%" : "—"}
                 </td>
@@ -401,7 +402,7 @@ function Projections({ goToArticle }) {
       </div>
 
       <div style={{ marginTop: 16, fontFamily: font.mono, fontSize: 10, color: C.textMuted, lineHeight: 1.8 }}>
-        SPREAD = model projected spread · KELLY % = Kelly criterion stake size · EV% = expected value vs. market · BLOWOUT = probability of 15+ pt win · UNIT STAKE = recommended wager (— = no play)
+        SPREAD = model projected spread · MARKET = market line · KELLY % = Kelly criterion stake size · EV% = expected value vs. market · BLOWOUT = probability of 15+ pt win · UNIT STAKE = recommended wager (— = no play)
       </div>
     </div>
   );
