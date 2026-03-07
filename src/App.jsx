@@ -73,17 +73,23 @@ const SAMPLE_BRACKET = {
 };
 
 const ARTICLES = [
-  // Add your articles here. Example:
+// Add your articles here. Example:
   // {
   //   id: 1,
   //   title: "Your Title Here",
   //   excerpt: "Short summary shown on the article list...",
-  //   body: "Full article text goes here.\nStart a new paragraph by adding \\n between them.\nYou can write as much as you want.",
+  //   body: "First paragraph of the article.\n[img:/images/my-chart.png|Caption text here]\nNext paragraph continues after the image.",
   //   date: "Mar 17, 2026",
   //   tag: "ANALYSIS",
   //   readTime: "6 min read",
-  //   img: null
+  //   img: "/images/cover-photo.png"
   // },
+  //
+  // INLINE IMAGES in body:
+  //   [img:/images/filename.png]              image with no caption
+  //   [img:/images/filename.png|My caption]   image with caption below
+  //
+  // Put image files in: ~/jacks-cbb-site/public/images/
 ];
 
 const SAMPLE_RECORD = {
@@ -822,13 +828,31 @@ function Writing({ initialArticle }) {
             {a.title}
           </h1>
           <div style={{ marginBottom: 28 }}>
-            <ImageSlot articleId={a.id} size="cover" />
+            {a.img
+              ? <img src={a.img} alt="" style={{ width: "100%", height: 280, objectFit: "cover", borderRadius: 4, display: "block" }} />
+              : <ImageSlot articleId={a.id} size="cover" />
+            }
           </div>
           <div style={{ fontFamily: font.sans, fontSize: 15, color: C.text, lineHeight: 1.75 }}>
             <p style={{ margin: "0 0 20px 0" }}>{a.excerpt}</p>
-            {a.body && a.body.split("\n").filter(p => p.trim()).map((paragraph, i) => (
-              <p key={i} style={{ margin: "0 0 20px 0" }}>{paragraph}</p>
-            ))}
+            {a.body && a.body.split("\n").filter(p => p.trim()).map((block, i) => {
+              const imgMatch = block.match(/^\[img:(.+?)(?:\|(.+?))?\]$/);
+              if (imgMatch) {
+                return (
+                  <div key={i} style={{ margin: "24px 0" }}>
+                    <img src={imgMatch[1]} alt={imgMatch[2] || ""} style={{
+                      width: "100%", borderRadius: 4, display: "block",
+                    }} />
+                    {imgMatch[2] && (
+                      <div style={{ fontFamily: font.mono, fontSize: 11, color: C.textMuted, marginTop: 6 }}>
+                        {imgMatch[2]}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+              return <p key={i} style={{ margin: "0 0 20px 0" }}>{block}</p>;
+            })}
           </div>
         </div>
       </div>
