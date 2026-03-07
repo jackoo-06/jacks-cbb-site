@@ -73,8 +73,17 @@ const SAMPLE_BRACKET = {
 };
 
 const ARTICLES = [
-  // Add your articles here. Example format:
-  // { id: 1, title: "Article Title", excerpt: "Short description...", date: "Mar 17, 2026", tag: "ANALYSIS", readTime: "6 min read", img: null },
+  // Add your articles here. Example:
+  // {
+  //   id: 1,
+  //   title: "Your Title Here",
+  //   excerpt: "Short summary shown on the article list...",
+  //   body: "Full article text goes here.\nStart a new paragraph by adding \\n between them.\nYou can write as much as you want.",
+  //   date: "Mar 17, 2026",
+  //   tag: "ANALYSIS",
+  //   readTime: "6 min read",
+  //   img: null
+  // },
 ];
 
 const SAMPLE_RECORD = {
@@ -817,14 +826,9 @@ function Writing({ initialArticle }) {
           </div>
           <div style={{ fontFamily: font.sans, fontSize: 15, color: C.text, lineHeight: 1.75 }}>
             <p style={{ margin: "0 0 20px 0" }}>{a.excerpt}</p>
-            <p style={{ margin: "0 0 20px 0", color: C.textDim }}>
-              This is where the full article body would go. You could write about your model methodology,
-              specific game breakdowns, historical trends, or betting angles you're seeing in the data.
-            </p>
-            <p style={{ margin: 0, color: C.textDim }}>
-              The writing section supports long-form content — think of it as your own column.
-              Model updates, tournament previews, postgame analysis, whatever you want to publish.
-            </p>
+            {a.body && a.body.split("\n").filter(p => p.trim()).map((paragraph, i) => (
+              <p key={i} style={{ margin: "0 0 20px 0" }}>{paragraph}</p>
+            ))}
           </div>
         </div>
       </div>
