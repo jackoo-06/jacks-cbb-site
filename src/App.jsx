@@ -1029,8 +1029,8 @@ function About() {
 
       <div style={{ fontFamily: font.sans, fontSize: 15, color: C.text, lineHeight: 1.8 }}>
         <p style={{ margin: "0 0 20px 0" }}>
-          I'm Jack. I built this model because I wanted a systematic, data-driven approach to college basketball
-          betting — one that removes emotion and relies on repeatable inputs. The model runs daily during the
+          My name is Jack. I built this model because I wanted a systematic, data-driven approach to college basketball
+          betting — one that removes emotion and impulsive decisions and relies on repeatable inputs. The model runs daily during the
           season and generates projections for every D1 game.
         </p>
 
@@ -1041,7 +1041,7 @@ function About() {
           The core engine is a Python-based rating system built on adjusted efficiency margins. Each team is
           rated on offensive and defensive efficiency, adjusted for opponent strength and tempo. The model
           ingests game-level data, recalculates ratings daily, and projects point spreads and totals for
-          upcoming matchups.
+          upcoming matchups. I have a tweak to traditional rating systems where I value the 2pt shot more than the 3pt shot; valuing rebounds and paint dominance is important in my view.
         </p>
         <p style={{ margin: "0 0 20px 0" }}>
           Projections are compared against market lines to identify expected value. When the model sees
@@ -1054,7 +1054,7 @@ function About() {
         </h3>
         <p style={{ margin: "0 0 20px 0" }}>
           This is not financial advice. It's a personal project — a way to combine my interest in basketball
-          analytics with quantitative modeling. Past performance doesn't guarantee future results. The model
+          analytics with quantitative modelling. Past performance doesn't guarantee future results. The model
           has blind spots and always will. I write about those honestly in the blog.
         </p>
 
@@ -1074,8 +1074,7 @@ function About() {
           Contact
         </h3>
         <p style={{ margin: "0 0 20px 0", color: C.textDim }}>
-          Questions, feedback, or just want to talk hoops? Find me on Twitter at <span style={{ color: C.accent }}>@handle</span> or
-          reach out via email.
+          Questions, feedback, or just want to talk hoops? Find me on Twitter at jackcbb1 <span style={{ color: C.accent }}>@handle</span>
         </p>
       </div>
     </div>
