@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "w": 0,
+    "l": 0,
+    "roi": 0.0,
+    "clv": 0.0,
+    "last10w": 0,
+    "last10l": 0
+  },
+  "history": [
+    {
+      "date": "",
+      "result": null,
+      "stake": 0.0,
+      "profit": 0.0,
+      "runningProfit": 0.0,
+      "clv": 0.0,
+      "runningCLV": 0.0
+    },
+    {
+      "date": "",
+      "result": null,
+      "stake": 0.0,
+      "profit": 0.0,
+      "runningProfit": 0.0,
+      "clv": 0.0,
+      "runningCLV": 0.0
+    },
+    {
+      "date": "",
+      "result": null,
+      "stake": 0.0,
+      "profit": 0.0,
+      "runningProfit": 0.0,
+      "clv": 0.0,
+      "runningCLV": 0.0
+    }
+  ]
+}
