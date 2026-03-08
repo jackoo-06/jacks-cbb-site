@@ -557,11 +557,13 @@ function Bracket() {
   const rounds = ["R32", "R16", "E8", "F4", "CG", "CHAMP"];
   const roundKeys = ["r32", "r16", "e8", "f4", "cg", "champ"];
 
-  // Build matchups from teams (pairs by seed order)
-  const matchups = [];
-  for (let i = 0; i < teams.length; i += 2) {
-    if (teams[i + 1]) matchups.push([teams[i], teams[i + 1]]);
-  }
+  // Build matchups in NCAA bracket order: 1v16, 8v9, 5v12, 4v13, 6v11, 3v14, 7v10, 2v15
+  const bracketSeeds = [[1,16],[8,9],[5,12],[4,13],[6,11],[3,14],[7,10],[2,15]];
+  const teamBySeed = {};
+  teams.forEach(t => { teamBySeed[t.seed] = t; });
+  const matchups = bracketSeeds
+    .map(([s1, s2]) => [teamBySeed[s1], teamBySeed[s2]])
+    .filter(([a, b]) => a && b);
 
   const teamSlot = (team, roundKey, isFav) => {
     const pct = team[roundKey] || 0;
