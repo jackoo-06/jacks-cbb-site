@@ -81,7 +81,7 @@ const ARTICLES = [
     date: "Mar 8, 2026",
     tag: "ANALYSIS",
     readTime: "7 min read",
-    img: null
+    img: "/images/cinderella-cover.png"
   },
 ];
 
