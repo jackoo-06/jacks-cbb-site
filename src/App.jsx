@@ -904,7 +904,10 @@ function Writing({ initialArticle }) {
               <p style={{ fontFamily: font.sans, fontSize: 13, color: C.textDim, margin: 0, lineHeight: 1.6 }}>{a.excerpt}</p>
             </div>
             <div onClick={e => e.stopPropagation()}>
-              <ImageSlot articleId={a.id} size="thumb" />
+              {a.img
+                ? <img src={a.img} alt="" style={{ width: 140, height: 94, objectFit: "cover", borderRadius: 4, display: "block", flexShrink: 0 }} />
+                : <ImageSlot articleId={a.id} size="thumb" />
+              }
             </div>
           </article>
         ))}
