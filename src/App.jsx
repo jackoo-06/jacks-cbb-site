@@ -318,7 +318,7 @@ function Projections({ goToArticle }) {
                     <span style={{ color: C.textDim }}> vs {oppTeam}</span>
                     <span style={{ color: C.textDim }}> ({Math.abs(g.spread).toFixed(1)})</span>
                   </div>
-                  <span style={{ fontFamily: font.mono, fontSize: 11, color: C.green, fontWeight: 500 }}>{g.units.toFixed(1)}u</span>
+                  <span style={{ fontFamily: font.mono, fontSize: 11, color: C.green, fontWeight: 500 }}>{g.units.toFixed(3)}u</span>
                   {g.result && (
                     <span style={{
                       fontFamily: font.mono, fontSize: 10, fontWeight: 600, padding: "1px 6px", borderRadius: 2,
@@ -391,7 +391,7 @@ function Projections({ goToArticle }) {
                 </td>
                 <td style={{ padding: "10px 8px", textAlign: "right", verticalAlign: "top", fontWeight: 500 }}>
                   {g.units > 0
-                    ? <span style={{ color: C.white }}>{g.units.toFixed(1)}u</span>
+                    ? <span style={{ color: C.white }}>{g.units.toFixed(3)}u</span>
                     : <span style={{ color: C.textMuted }}>—</span>
                   }
                 </td>

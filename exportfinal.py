@@ -163,7 +163,7 @@ def export_projections(wb):
             "kelly": round(kelly_raw * 100, 1),
             "ev": round(ev_raw * 100, 1),
             "blowout": round(blowout_raw * 100),
-            "units": round(units_raw, 1),
+            "units": round(units_raw, 3),
             "bet": is_bet,
         })
 
