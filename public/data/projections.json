@@ -1,6 +1,6 @@
 {
   "date": "Mar 08, 2026",
-  "updated": "12:14 PM MT",
+  "updated": "12:52 PM MT",
   "games": [
     {
       "id": 1,
@@ -25,7 +25,7 @@
       "kelly": 6.3,
       "ev": 5.3,
       "blowout": 82,
-      "units": 0.95,
+      "units": 0.945,
       "bet": true
     }
   ]

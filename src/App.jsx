@@ -920,31 +920,30 @@ function Writing({ initialArticle }) {
   );
 }
 
-const PORTFOLIO = {
-  summary: { totalStaked: 0, currentValue: 0, roi: 0, openPositions: 0, closedPositions: 0 },
-  positions: [
-    // Add your positions here. Example format:
-    // { id: 1, category: "TITLE", team: "Houston", odds: "+650", staked: 3.0, currentOdds: "+500", status: "open", date: "Nov 12", notes: "Your reasoning here", articleId: null },
-    // Categories: "TITLE" (national champion), "CONF" (conference winner), "PLAYER" (player awards)
-    // Status: "open" or "closed" (closed positions need result: "W" or "L" and pnl: number)
-  ],
+const SAMPLE_PORTFOLIO = {
+  positions: [],
 };
 
 function Portfolio({ goToArticle }) {
   const [filter, setFilter] = useState("ALL");
   const [showClosed, setShowClosed] = useState(true);
+  const [seasonFilter, setSeasonFilter] = useState("ALL");
+  const [portData] = useData("portfolio.json", SAMPLE_PORTFOLIO);
 
+  const allPositions = portData.positions || [];
+  const seasons = ["ALL", ...Array.from(new Set(allPositions.map(p => p.season).filter(Boolean)))];
   const categories = ["ALL", "TITLE", "CONF", "PLAYER"];
-  const positions = PORTFOLIO.positions.filter(p => {
+  const positions = allPositions.filter(p => {
+    const matchSeason = seasonFilter === "ALL" || p.season === seasonFilter;
     const matchCat = filter === "ALL" || p.category === filter;
     const matchStatus = showClosed || p.status === "open";
-    return matchCat && matchStatus;
+    return matchSeason && matchCat && matchStatus;
   });
 
-  const openPositions = PORTFOLIO.positions.filter(p => p.status === "open");
-  const closedPositions = PORTFOLIO.positions.filter(p => p.status === "closed");
+  const openPositions = allPositions.filter(p => p.status === "open");
+  const closedPositions = allPositions.filter(p => p.status === "closed");
   const closedPnl = closedPositions.reduce((sum, p) => sum + (p.pnl || 0), 0);
-  const totalStaked = PORTFOLIO.positions.reduce((sum, p) => sum + p.staked, 0);
+  const totalStaked = allPositions.reduce((sum, p) => sum + (p.staked || 0), 0);
   const openStaked = openPositions.reduce((sum, p) => sum + p.staked, 0);
 
   const catLabels = { TITLE: "National Champion", CONF: "Conference Winner", PLAYER: "Player Award" };
@@ -984,6 +983,19 @@ function Portfolio({ goToArticle }) {
             }}>{c === "ALL" ? "ALL" : c}</button>
           ))}
         </div>
+	<select
+          value={seasonFilter}
+          onChange={e => setSeasonFilter(e.target.value)}
+          style={{
+            padding: "5px 10px", border: `1px solid ${C.border}`, borderRadius: 3,
+            background: C.surface, color: C.white, fontFamily: font.mono, fontSize: 10,
+            outline: "none", cursor: "pointer",
+          }}
+        >
+          {seasons.map(s => (
+            <option key={s} value={s}>{s === "ALL" ? "All Seasons" : s}</option>
+          ))}
+        </select>
         <button onClick={() => setShowClosed(!showClosed)} style={{
           padding: "5px 12px", border: `1px solid ${C.border}`, borderRadius: 3, cursor: "pointer",
           background: showClosed ? "transparent" : "rgba(0,0,0,0.04)",

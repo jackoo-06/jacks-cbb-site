@@ -91,6 +91,20 @@ SIM_REGION = "Region"
 SIM_SEED = "Seed"
 SIM_RATING = "Rating"
 
+# Portfolio tab:
+#   Season | Category | Team | Odds | Stake | Current Odds | Status | Date | Notes | Result | PnL
+PORT_SEASON = "Season"
+PORT_CATEGORY = "Category"
+PORT_TEAM = "Team"
+PORT_ODDS = "Odds"
+PORT_STAKE = "Stake"
+PORT_CURRENT = "Current Odds"
+PORT_STATUS = "Status"
+PORT_DATE = "Date"
+PORT_NOTES = "Notes"
+PORT_RESULT = "Result"
+PORT_PNL = "PnL"
+
 
 # ============================================================
 # HELPERS
@@ -226,6 +240,61 @@ def export_bracket(wb):
     print(f"   ✅ Bracket: {total} teams, {len(regions)} regions, {len(champ_odds)} with title odds")
     return {"updated": datetime.now().strftime("%b %d, %Y"), "regions": regions, "champOdds": champ_odds}
 
+def export_portfolio(wb):
+    rows = read_sheet(wb, "Portfolio")
+    if not rows: return None
+    positions = []
+    for i, r in enumerate(rows):
+        team = col(r, PORT_TEAM)
+        if not team: continue
+
+        odds_raw = col(r, PORT_ODDS)
+        current_raw = col(r, PORT_CURRENT)
+        status_raw = col(r, PORT_STATUS)
+        date_raw = col(r, PORT_DATE)
+        result_raw = col(r, PORT_RESULT)
+        pnl_raw = col(r, PORT_PNL)
+
+        # Format odds as string with +
+        def fmt_odds(v):
+            if v is None: return "-"
+            try:
+                n = int(float(v))
+                return f"+{n}" if n > 0 else str(n)
+            except: return str(v)
+
+        # Format date
+        date_str = ""
+        if date_raw:
+            if hasattr(date_raw, 'strftime'):
+                date_str = date_raw.strftime("%b %d")
+            else:
+                date_str = str(date_raw)
+
+        status = str(status_raw).strip().lower() if status_raw else "open"
+        is_closed = status == "closed"
+
+        pos = {
+            "id": i + 1,
+            "season": str(col(r, PORT_SEASON) or "").strip(),
+            "category": str(col(r, PORT_CATEGORY) or "").strip().upper(),
+            "team": str(team).strip(),
+            "odds": fmt_odds(odds_raw),
+            "staked": round(to_float(col(r, PORT_STAKE)), 3),
+            "currentOdds": fmt_odds(current_raw),
+            "status": "closed" if is_closed else "open",
+            "date": date_str,
+            "notes": str(col(r, PORT_NOTES) or "").strip(),
+        }
+
+        if is_closed:
+            pos["result"] = str(result_raw).strip().upper() if result_raw else ""
+            pos["pnl"] = round(to_float(pnl_raw), 2)
+
+        positions.append(pos)
+
+    print(f"   ✅ Portfolio: {len(positions)} positions")
+    return {"positions": positions}
 
 def export_record(wb):
     """
@@ -351,6 +420,7 @@ def main():
     projections = export_projections(wb)
     rankings = export_rankings(wb)
     bracket = export_bracket(wb)
+    portfolio = export_portfolio(wb)
     record = export_record(wb)
 
     print(f"\n💾 Saving...")
@@ -358,6 +428,7 @@ def main():
     if rankings:    save_json(rankings, "rankings.json")
     if bracket:     save_json(bracket, "bracket.json")
     if record:      save_json(record, "record.json")
+    if portfolio:   save_json(portfolio, "portfolio.json")
 
     push_to_github()
 

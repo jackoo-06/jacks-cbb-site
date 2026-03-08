@@ -1,0 +1,52 @@
+{
+  "positions": [
+    {
+      "id": 1,
+      "season": "2025-26",
+      "category": "TITLE",
+      "team": "Arizona",
+      "odds": "+2800",
+      "staked": 1.111,
+      "currentOdds": "+475",
+      "status": "open",
+      "date": "May 02",
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "season": "2025-26",
+      "category": "TITLE",
+      "team": "St. John's",
+      "odds": "+2000",
+      "staked": 1.58,
+      "currentOdds": "+6000",
+      "status": "open",
+      "date": "Apr 25",
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "season": "2025-26",
+      "category": "TITLE",
+      "team": "Illinois",
+      "odds": "+7000",
+      "staked": 0.45,
+      "currentOdds": "+1800",
+      "status": "open",
+      "date": "Apr 25",
+      "notes": ""
+    },
+    {
+      "id": 4,
+      "season": "2025-26",
+      "category": "TITLE",
+      "team": "Washington",
+      "odds": "+20000",
+      "staked": 0.15,
+      "currentOdds": "+50000",
+      "status": "open",
+      "date": "Apr 25",
+      "notes": ""
+    }
+  ]
+}
