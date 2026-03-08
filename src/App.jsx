@@ -421,8 +421,17 @@ function Rankings() {
     return matchSearch;
   });
 
-  const risers = []; // Will populate when "last week" data is added
-  const fallers = [];
+  const risers = allTeams
+    .filter(r => r.lastRank && r.lastRank > r.rank)
+    .map(r => ({ name: r.team, rank: r.rank, diff: r.lastRank - r.rank }))
+    .sort((a, b) => b.diff - a.diff)
+    .slice(0, 5);
+
+  const fallers = allTeams
+    .filter(r => r.lastRank && r.lastRank < r.rank)
+    .map(r => ({ name: r.team, rank: r.rank, diff: r.lastRank - r.rank }))
+    .sort((a, b) => a.diff - b.diff)
+    .slice(0, 5);
 
   const MoverList = ({ title, movers, type }) => (
     <div>
@@ -489,9 +498,9 @@ function Rankings() {
           <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: font.mono, fontSize: 12 }}>
             <thead>
               <tr style={{ borderBottom: `1px solid ${C.border}` }}>
-                {["RK", "TEAM", "RATING"].map((h, i) => (
+                {["RK", "LW", "", "TEAM", "RATING"].map((h, i) => (
                   <th key={i} style={{
-                    padding: "8px 8px", textAlign: i >= 2 ? "right" : "left",
+                    padding: "8px 8px", textAlign: i >= 4 ? "right" : "left",
                     fontWeight: 400, fontSize: 10, color: C.textMuted, letterSpacing: "0.05em", whiteSpace: "nowrap",
                   }}>{h}</th>
                 ))}
@@ -505,14 +514,14 @@ function Rankings() {
                 return (
                   <React.Fragment key={i}>
                     {showBreak25 && (
-                      <tr><td colSpan={3} style={{
+                      <tr><td colSpan={5} style={{
                         padding: "6px 8px", fontFamily: font.mono, fontSize: 9,
                         color: C.accent, letterSpacing: "0.1em", background: C.accentDim,
                         borderTop: `1px solid ${C.accent}`, borderBottom: `1px solid ${C.accent}`,
                       }}>BELOW TOP 25</td></tr>
                     )}
                     {showBreak68 && (
-                      <tr><td colSpan={3} style={{
+                      <tr><td colSpan={5} style={{
                         padding: "6px 8px", fontFamily: font.mono, fontSize: 9,
                         color: C.textMuted, letterSpacing: "0.1em",
                         borderTop: `2px solid ${C.border}`, borderBottom: `1px solid ${C.border}`,
@@ -523,6 +532,12 @@ function Rankings() {
                       onMouseEnter={e => e.currentTarget.style.background = "rgba(0,0,0,0.03)"}
                       onMouseLeave={e => e.currentTarget.style.background = "transparent"}>
                       <td style={{ padding: "8px 8px", fontWeight: 500, color: rank <= 25 ? C.white : rank <= 68 ? C.text : C.textDim }}>{rank}</td>
+                      <td style={{ padding: "8px 8px", color: C.textMuted }}>{r.lastRank || "—"}</td>
+                      <td style={{ padding: "8px 4px", width: 32 }}>
+                        {r.lastRank && r.lastRank > rank && <span style={{ color: C.green, fontSize: 10, fontWeight: 600 }}>{"\u25B2"}{r.lastRank - rank}</span>}
+                        {r.lastRank && r.lastRank < rank && <span style={{ color: C.red, fontSize: 10, fontWeight: 600 }}>{"\u25BC"}{rank - r.lastRank}</span>}
+                        {(!r.lastRank || r.lastRank === rank) && <span style={{ color: C.textMuted, fontSize: 10 }}>—</span>}
+                      </td>
                       <td style={{ padding: "8px 8px", color: rank <= 25 ? C.white : rank <= 68 ? C.text : C.textDim, fontWeight: rank <= 25 ? 500 : 400 }}>{r.team}</td>
                       <td style={{ padding: "8px 8px", textAlign: "right", color: C.text }}>{r.rating.toFixed(3)}</td>
                     </tr>

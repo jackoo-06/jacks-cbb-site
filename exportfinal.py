@@ -75,6 +75,7 @@ PROJ_UNITS = "Units"
 RANK_TEAM = "Team"
 RANK_RATING = "Rating"
 RANK_RANK = "New Rank"
+RANK_LAST = "Last Rank"
 
 # MMSim tab:
 #   Team | Round of 32 Prob | Round of 16 Prob | Elite 8 Prob |
@@ -182,7 +183,8 @@ def export_rankings(wb):
         team = col(r, RANK_TEAM)
         if not team: continue
         teams.append({
-            "rank": to_int(col(r, RANK_RANK)),
+           "rank": to_int(col(r, RANK_RANK)),
+            "lastRank": to_int(col(r, RANK_LAST)),
             "team": str(team).strip(),
             "rating": round(to_float(col(r, RANK_RATING)), 3),
         })
