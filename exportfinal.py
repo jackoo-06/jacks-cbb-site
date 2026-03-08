@@ -170,7 +170,7 @@ def export_projections(wb):
     print(f"   ✅ Projections: {len(games)} games")
     return {
         "date": datetime.now().strftime("%b %d, %Y"),
-        "updated": datetime.now().strftime("%I:%M %p ET"),
+        "updated": datetime.now().strftime("%I:%M %p MT"),
         "games": games,
     }
 
