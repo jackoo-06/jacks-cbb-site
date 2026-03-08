@@ -582,25 +582,28 @@ function Bracket() {
 
   const teamSlot = (team, roundKey, isFav) => {
     const pct = team[roundKey] || 0;
+    const isEliminated = team.r32 === 0 && team.r16 === 0 && team.e8 === 0 && team.f4 === 0 && team.champ === 0;
     return (
       <div style={{
         display: "flex", alignItems: "center", justifyContent: "space-between",
         padding: "6px 10px", gap: 8,
-        background: isFav ? "rgba(184,134,11,0.06)" : "transparent",
-        borderLeft: isFav ? `2px solid ${C.accent}` : `2px solid transparent`,
+        background: isEliminated ? "transparent" : isFav ? "rgba(184,134,11,0.06)" : "transparent",
+        borderLeft: isEliminated ? `2px solid transparent` : isFav ? `2px solid ${C.accent}` : `2px solid transparent`,
+        opacity: isEliminated ? 0.35 : 1,
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: 6, minWidth: 0 }}>
           <span style={{ fontFamily: font.mono, fontSize: 10, color: C.textMuted, width: 18, textAlign: "right", flexShrink: 0 }}>{team.seed}</span>
           <span style={{
-            fontFamily: font.mono, fontSize: 12, fontWeight: isFav ? 500 : 400,
-            color: isFav ? C.white : C.textDim,
+            fontFamily: font.mono, fontSize: 12, fontWeight: isEliminated ? 400 : isFav ? 500 : 400,
+            color: isEliminated ? C.textMuted : isFav ? C.white : C.textDim,
             whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
+            textDecoration: isEliminated ? "line-through" : "none",
           }}>{team.team}</span>
         </div>
         <span style={{
           fontFamily: font.mono, fontSize: 11, fontWeight: 500, flexShrink: 0,
-          color: pct > 70 ? C.green : pct > 40 ? C.text : C.textDim,
-        }}>{pct.toFixed(1)}%</span>
+          color: isEliminated ? C.textMuted : pct > 70 ? C.green : pct > 40 ? C.text : C.textDim,
+        }}>{isEliminated ? "OUT" : pct.toFixed(1) + "%"}</span>
       </div>
     );
   };
@@ -743,11 +746,13 @@ function Bracket() {
               </tr>
             </thead>
             <tbody>
-              {teams
+             {teams
                 .slice()
                 .sort((a, b) => (b.champ || 0) - (a.champ || 0))
-                .map((t, i) => (
-                <tr key={i} style={{ borderBottom: `1px solid ${C.borderLight}` }}
+                .map((t, i) => {
+                const isElim = t.r32 === 0 && t.r16 === 0 && t.e8 === 0 && t.f4 === 0 && t.champ === 0;
+                return (
+                <tr key={i} style={{ borderBottom: `1px solid ${C.borderLight}`, opacity: isElim ? 0.35 : 1 }}
                   onMouseEnter={e => e.currentTarget.style.background = "rgba(0,0,0,0.03)"}
                   onMouseLeave={e => e.currentTarget.style.background = "transparent"}>
                   <td style={{ padding: "7px 8px", color: C.textMuted }}>{t.seed}</td>
@@ -762,7 +767,8 @@ function Bracket() {
                     );
                   })}
                 </tr>
-              ))}
+                );
+              })}
             </tbody>
           </table>
         </div>
