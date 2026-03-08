@@ -1,39 +1,39 @@
 {
   "summary": {
     "w": 0,
-    "l": 0,
-    "roi": 0.0,
-    "clv": 0.0,
+    "l": 1,
+    "roi": -1.0,
+    "clv": -0.019986,
     "last10w": 0,
-    "last10l": 0
+    "last10l": 1
   },
   "history": [
     {
-      "date": "",
-      "result": null,
-      "stake": 0.0,
-      "profit": 0.0,
-      "runningProfit": 0.0,
-      "clv": 0.0,
-      "runningCLV": 0.0
+      "date": "03/08/2026",
+      "result": "L",
+      "stake": 0.945,
+      "profit": -0.945,
+      "runningProfit": -0.945,
+      "clv": -0.019986,
+      "runningCLV": -0.019986
     },
     {
       "date": "",
       "result": null,
       "stake": 0.0,
       "profit": 0.0,
-      "runningProfit": 0.0,
+      "runningProfit": -0.945,
       "clv": 0.0,
-      "runningCLV": 0.0
+      "runningCLV": -0.019986
     },
     {
       "date": "",
       "result": null,
       "stake": 0.0,
       "profit": 0.0,
-      "runningProfit": 0.0,
+      "runningProfit": -0.945,
       "clv": 0.0,
-      "runningCLV": 0.0
+      "runningCLV": -0.019986
     }
   ]
 }
