@@ -84,24 +84,6 @@ const ARTICLES = [
     img: null
   },
 ];
-// Add your articles here. Example:
-  // {
-  //   id: 1,
-  //   title: "Your Title Here",
-  //   excerpt: "Short summary shown on the article list...",
-  //   body: "First paragraph of the article.\n[img:/images/my-chart.png|Caption text here]\nNext paragraph continues after the image.",
-  //   date: "Mar 17, 2026",
-  //   tag: "ANALYSIS",
-  //   readTime: "6 min read",
-  //   img: "/images/cover-photo.png"
-  // },
-  //
-  // INLINE IMAGES in body:
-  //   [img:/images/filename.png]              image with no caption
-  //   [img:/images/filename.png|My caption]   image with caption below
-  //
-  // Put image files in: ~/jacks-cbb-site/public/images/
-];
 
 const SAMPLE_RECORD = {
   summary: { w: 0, l: 0, roi: 0, clv: 0, last10w: 0, last10l: 0 },
