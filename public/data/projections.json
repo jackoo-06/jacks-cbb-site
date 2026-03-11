@@ -1,19 +1,45 @@
 {
-  "date": "Mar 09, 2026",
-  "updated": "10:25 PM MT",
+  "date": "Mar 10, 2026",
+  "updated": "07:53 PM MT",
   "games": [
     {
       "id": 1,
-      "team1": "Wake Forest",
-      "team2": "Virginia Tech",
-      "position": "Wake Forest",
-      "spread": 2.3,
-      "market": -2.5,
-      "kelly": 4.9,
-      "ev": 4.5,
-      "blowout": 36,
-      "units": 0.74,
+      "team1": "Florida Atlantic",
+      "team2": "Temple",
+      "position": "Florida Atlantic",
+      "spread": 6.6,
+      "market": 2.0,
+      "kelly": 4.6,
+      "ev": 4.3,
+      "blowout": 48,
+      "units": 0.0,
+      "bet": false
+    },
+    {
+      "id": 2,
+      "team1": "Xavier",
+      "team2": "Marquette",
+      "position": "Xavier",
+      "spread": 0.1,
+      "market": -4.5,
+      "kelly": 4.5,
+      "ev": 4.3,
+      "blowout": 28,
+      "units": 0.679,
       "bet": true
+    },
+    {
+      "id": 3,
+      "team1": "Georgetown",
+      "team2": "DePaul",
+      "position": "Georgetown",
+      "spread": 3.6,
+      "market": -1.0,
+      "kelly": 4.5,
+      "ev": 4.3,
+      "blowout": 39,
+      "units": 0.0,
+      "bet": false
     }
   ]
 }
