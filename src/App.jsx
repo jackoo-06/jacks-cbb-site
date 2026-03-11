@@ -194,9 +194,9 @@ function Projections({ goToArticle }) {
         flexWrap: "wrap",
       }}>
         <span>RECORD <span style={{ color: C.white, fontWeight: 500 }}>{record.w || 0}-{record.l || 0}</span></span>
-        <span>UNITS <span style={{ color: totalUnits >= 0 ? C.green : C.red, fontWeight: 500 }}>{totalUnits >= 0 ? "+" : ""}{totalUnits.toFixed(1)}</span></span>
-        <span>ROI <span style={{ color: (record.roi || 0) >= 0 ? C.green : C.red, fontWeight: 500 }}>{((record.roi || 0) * 100).toFixed(1)}%</span></span>
-        <span>CLV <span style={{ color: (record.clv || 0) >= 0 ? C.green : C.red, fontWeight: 500 }}>{(record.clv || 0) >= 0 ? "+" : ""}{((record.clv || 0) * 100).toFixed(1)}%</span></span>
+        <span>UNITS <span style={{ color: totalUnits >= 0 ? C.green : C.red, fontWeight: 500 }}>{totalUnits >= 0 ? "+" : ""}{totalUnits.toFixed(2)}</span></span>
+        <span>ROI <span style={{ color: (record.roi || 0) >= 0 ? C.green : C.red, fontWeight: 500 }}>{((record.roi || 0) * 100).toFixed(2)}%</span></span>
+        <span>CLV <span style={{ color: (record.clv || 0) >= 0 ? C.green : C.red, fontWeight: 500 }}>{(record.clv || 0) >= 0 ? "+" : ""}{((record.clv || 0) * 100).toFixed(2)}%</span></span>
         <span>LAST 10 <span style={{ color: C.white, fontWeight: 500 }}>{record.last10w || 0}-{record.last10l || 0}</span></span>
         <span style={{ marginLeft: "auto", color: C.textMuted }}>Updated {projData.updated}</span>
       </div>
