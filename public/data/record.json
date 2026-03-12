@@ -1,10 +1,10 @@
 {
   "summary": {
-    "w": 1,
+    "w": 2,
     "l": 2,
-    "roi": -0.405007,
-    "clv": 0.031074,
-    "last10w": 1,
+    "roi": -0.112842,
+    "clv": 0.025431,
+    "last10w": 2,
     "last10l": 2
   },
   "history": [
@@ -34,6 +34,15 @@
       "runningProfit": -0.961891,
       "clv": 0.10783,
       "runningCLV": 0.031074
+    },
+    {
+      "date": "03/11/2026",
+      "result": "W",
+      "stake": 0.679,
+      "profit": 0.617273,
+      "runningProfit": -0.344618,
+      "clv": 0.008504,
+      "runningCLV": 0.025431
     }
   ]
 }
