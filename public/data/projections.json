@@ -1,45 +1,32 @@
 {
-  "date": "Mar 11, 2026",
-  "updated": "09:49 PM MT",
+  "date": "Mar 12, 2026",
+  "updated": "10:26 PM MT",
   "games": [
     {
       "id": 1,
-      "team1": "Davidson",
-      "team2": "Loyola Chicago",
-      "position": "Davidson",
-      "spread": 14.7,
-      "market": 6.5,
-      "kelly": 8.6,
-      "ev": 6.6,
-      "blowout": 77,
-      "units": 1.29,
-      "bet": true
+      "team1": "Missouri State",
+      "team2": "Louisiana Tech",
+      "position": "Missouri State",
+      "spread": 3.1,
+      "market": -1.5,
+      "kelly": 4.6,
+      "ev": 4.3,
+      "blowout": 37,
+      "units": 0.0,
+      "bet": false
     },
     {
       "id": 2,
-      "team1": "North Carolina Central",
-      "team2": "Maryland-Eastern Shore",
-      "position": "North Carolina Central",
-      "spread": 6.1,
-      "market": 1.5,
+      "team1": "Tennessee",
+      "team2": "Vanderbilt",
+      "position": "Tennessee",
+      "spread": 3.2,
+      "market": -1.5,
       "kelly": 4.6,
       "ev": 4.3,
-      "blowout": 46,
-      "units": 0.0,
-      "bet": false
-    },
-    {
-      "id": 3,
-      "team1": "Louisville",
-      "team2": "Miami",
-      "position": "Louisville",
-      "spread": 7.2,
-      "market": 2.5,
-      "kelly": 4.6,
-      "ev": 4.3,
-      "blowout": 50,
-      "units": 0.0,
-      "bet": false
+      "blowout": 37,
+      "units": 0.695,
+      "bet": true
     }
   ]
 }
