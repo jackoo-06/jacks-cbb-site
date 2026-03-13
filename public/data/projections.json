@@ -1,9 +1,48 @@
 {
-  "date": "Mar 12, 2026",
-  "updated": "10:28 PM MT",
+  "date": "Mar 13, 2026",
+  "updated": "06:53 AM MT",
   "games": [
     {
       "id": 1,
+      "team1": "Uconn",
+      "team2": "Georgetown",
+      "position": "Uconn",
+      "spread": 20.6,
+      "market": 13.5,
+      "kelly": 6.4,
+      "ev": 5.3,
+      "blowout": 81,
+      "units": 0.0,
+      "bet": false
+    },
+    {
+      "id": 2,
+      "team1": "Duke",
+      "team2": "Clemson",
+      "position": "Duke",
+      "spread": 18.6,
+      "market": 11.5,
+      "kelly": 6.7,
+      "ev": 5.5,
+      "blowout": 79,
+      "units": 0.0,
+      "bet": false
+    },
+    {
+      "id": 3,
+      "team1": "Davidson",
+      "team2": "St. Joseph's",
+      "position": "Davidson",
+      "spread": 3.9,
+      "market": -2.0,
+      "kelly": 7.2,
+      "ev": 5.8,
+      "blowout": 47,
+      "units": 1.074,
+      "bet": true
+    },
+    {
+      "id": 4,
       "team1": "Missouri State",
       "team2": "Louisiana Tech",
       "position": "Missouri State",
@@ -12,11 +51,11 @@
       "kelly": 4.6,
       "ev": 4.3,
       "blowout": 37,
-      "units": 0.0,
-      "bet": false
+      "units": 0.688,
+      "bet": true
     },
     {
-      "id": 2,
+      "id": 5,
       "team1": "Tennessee",
       "team2": "Vanderbilt",
       "position": "Tennessee",
