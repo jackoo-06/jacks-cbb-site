@@ -169,6 +169,8 @@ function Nav({ active, setActive }) {
 
 function Projections({ goToArticle }) {
   const [sort, setSort] = useState("ev");
+  const [showHistory, setShowHistory] = useState(false);
+  const [historySeason, setHistorySeason] = useState("ALL");
   const [projData, loading] = useData("projections.json", SAMPLE_PROJECTIONS);
   const [recordData] = useData("record.json", SAMPLE_RECORD);
 
@@ -271,6 +273,98 @@ function Projections({ goToArticle }) {
           </div>
         </div>
       )}
+{/* Bet History - Collapsible */}
+      {(() => {
+        const allHistory = history.filter(h => h.date && h.result);
+        const seasons = ["ALL", ...Array.from(new Set(allHistory.map(h => h.season).filter(Boolean)))];
+        const filtered = historySeason === "ALL" ? allHistory : allHistory.filter(h => h.season === historySeason);
+
+        const calcStats = (games) => {
+          const wins = games.filter(g => g.result === "W" || g.result === "Win").length;
+          const losses = games.filter(g => g.result === "L" || g.result === "Loss").length;
+          const pushes = games.filter(g => g.result === "P" || g.result === "Push").length;
+          const totalStaked = games.reduce((s, g) => s + (g.stake || 0), 0);
+          const totalProfit = games.reduce((s, g) => s + (g.profit || 0), 0);
+          const roi = totalStaked > 0 ? totalProfit / totalStaked : 0;
+          return { wins, losses, pushes, totalStaked, totalProfit, roi };
+        };
+
+        const overallStats = calcStats(allHistory);
+        const filteredStats = calcStats(filtered);
+        const displayStats = historySeason === "ALL" ? overallStats : filteredStats;
+
+        if (allHistory.length === 0) return null;
+
+        return (
+          <div style={{ marginBottom: 24 }}>
+            <button onClick={() => setShowHistory(!showHistory)} style={{
+              background: "none", border: `1px solid ${C.border}`, borderRadius: 3,
+              padding: "6px 14px", cursor: "pointer", fontFamily: font.mono, fontSize: 11,
+              color: C.textDim, display: "flex", alignItems: "center", gap: 6,
+            }}>
+              {showHistory ? "\u25BC" : "\u25B6"} Bet History ({allHistory.length} bets)
+            </button>
+
+            {showHistory && (
+              <div style={{ marginTop: 16 }}>
+                <div style={{ display: "flex", gap: 10, marginBottom: 16, alignItems: "center", flexWrap: "wrap" }}>
+                  <select value={historySeason} onChange={e => setHistorySeason(e.target.value)} style={{
+                    padding: "5px 10px", border: `1px solid ${C.border}`, borderRadius: 3,
+                    background: C.surface, color: C.white, fontFamily: font.mono, fontSize: 10,
+                    outline: "none", cursor: "pointer",
+                  }}>
+                    {seasons.map(s => (
+                      <option key={s} value={s}>{s === "ALL" ? "All Seasons" : s}</option>
+                    ))}
+                  </select>
+                  <div style={{ display: "flex", gap: 20, fontFamily: font.mono, fontSize: 11, color: C.textDim }}>
+                    <span>RECORD <span style={{ color: C.white, fontWeight: 500 }}>{displayStats.wins}-{displayStats.losses}{displayStats.pushes > 0 ? `-${displayStats.pushes}` : ""}</span></span>
+                    <span>P&L <span style={{ color: displayStats.totalProfit >= 0 ? C.green : C.red, fontWeight: 500 }}>{displayStats.totalProfit >= 0 ? "+" : ""}{displayStats.totalProfit.toFixed(2)}u</span></span>
+                    <span>ROI <span style={{ color: displayStats.roi >= 0 ? C.green : C.red, fontWeight: 500 }}>{(displayStats.roi * 100).toFixed(2)}%</span></span>
+                  </div>
+                </div>
+
+                <div style={{ overflowX: "auto" }}>
+                  <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: font.mono, fontSize: 11 }}>
+                    <thead>
+                      <tr style={{ borderBottom: `1px solid ${C.border}` }}>
+                        {["DATE", "MATCHUP", "RESULT", "STAKE", "PROFIT", "RUNNING P&L"].map((h, i) => (
+                          <th key={i} style={{
+                            padding: "6px 8px", textAlign: i >= 2 ? "right" : "left",
+                            fontWeight: 400, fontSize: 10, color: C.textMuted, letterSpacing: "0.05em",
+                          }}>{h}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {filtered.slice().reverse().map((h, i) => (
+                        <tr key={i} style={{ borderBottom: `1px solid ${C.borderLight}` }}>
+                          <td style={{ padding: "6px 8px", color: C.textDim }}>{h.date}</td>
+                          <td style={{ padding: "6px 8px", color: C.text }}>{h.matchup || ""}</td>
+                          <td style={{ padding: "6px 8px" }}>
+                            <span style={{
+                              fontSize: 10, fontWeight: 600, padding: "1px 6px", borderRadius: 2,
+                              background: h.result === "W" || h.result === "Win" ? "rgba(45,122,79,0.15)" : h.result === "L" || h.result === "Loss" ? "rgba(192,64,64,0.15)" : "rgba(150,150,150,0.15)",
+                              color: h.result === "W" || h.result === "Win" ? C.green : h.result === "L" || h.result === "Loss" ? C.red : C.textDim,
+                            }}>{h.result}</span>
+                          </td>
+                          <td style={{ padding: "6px 8px", textAlign: "right", color: C.text }}>{(h.stake || 0).toFixed(2)}u</td>
+                          <td style={{ padding: "6px 8px", textAlign: "right", fontWeight: 500, color: (h.profit || 0) >= 0 ? C.green : C.red }}>
+                            {(h.profit || 0) >= 0 ? "+" : ""}{(h.profit || 0).toFixed(2)}u
+                          </td>
+                          <td style={{ padding: "6px 8px", textAlign: "right", fontWeight: 500, color: (h.runningProfit || 0) >= 0 ? C.green : C.red }}>
+                            {(h.runningProfit || 0) >= 0 ? "+" : ""}{(h.runningProfit || 0).toFixed(2)}u
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+          </div>
+        );
+      })()}
 
       {/* Date + sort */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20, flexWrap: "wrap", gap: 8 }}>

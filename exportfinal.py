@@ -354,6 +354,7 @@ def export_record(wb):
                 else:
                     date_str = str(date_val)
 
+            matchup = entry.get("Matchup")
             h = {
                 "date": date_str,
                 "result": str(result).strip() if result else None,
@@ -362,6 +363,7 @@ def export_record(wb):
                 "runningProfit": to_float(running_profit),
                 "clv": to_float(entry.get("CLV")),
                 "runningCLV": to_float(running_clv),
+                "season": str(entry.get("Season") or "").strip(),
             }
             history.append(h)
 
