@@ -328,9 +328,9 @@ function Projections({ goToArticle }) {
                   <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: font.mono, fontSize: 11 }}>
                     <thead>
                       <tr style={{ borderBottom: `1px solid ${C.border}` }}>
-                        {["DATE", "MATCHUP", "RESULT", "STAKE", "PROFIT", "RUNNING P&L"].map((h, i) => (
+                        {["DATE", "MATCHUP", "RESULT", "STAKE", "PROFIT", "RUNNING P&L", "CLV", "RUNNING CLV"].map((h, i) => (
                           <th key={i} style={{
-                            padding: "6px 8px", textAlign: i >= 2 ? "right" : "left",
+                            padding: "6px 8px", textAlign: i >= 3 ? "right" : "left",
                             fontWeight: 400, fontSize: 10, color: C.textMuted, letterSpacing: "0.05em",
                           }}>{h}</th>
                         ))}
@@ -354,6 +354,12 @@ function Projections({ goToArticle }) {
                           </td>
                           <td style={{ padding: "6px 8px", textAlign: "right", fontWeight: 500, color: (h.runningProfit || 0) >= 0 ? C.green : C.red }}>
                             {(h.runningProfit || 0) >= 0 ? "+" : ""}{(h.runningProfit || 0).toFixed(2)}u
+                          </td>
+                          <td style={{ padding: "6px 8px", textAlign: "right", color: (h.clv || 0) >= 0 ? C.green : C.red }}>
+                            {((h.clv || 0) * 100).toFixed(2)}%
+                          </td>
+                          <td style={{ padding: "6px 8px", textAlign: "right", fontWeight: 500, color: (h.runningCLV || 0) >= 0 ? C.green : C.red }}>
+                            {((h.runningCLV || 0) * 100).toFixed(2)}%
                           </td>
                         </tr>
                       ))}

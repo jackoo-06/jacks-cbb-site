@@ -342,6 +342,8 @@ def export_record(wb):
             running_profit = entry.get("Running Profit")
             running_clv = entry.get("Running CLV")
             result = entry.get("Win/Loss/Push")
+            matchup = entry.get("Matchup")
+            season = entry.get("Season")
 
             if date_val is None and running_profit is None:
                 continue
@@ -357,13 +359,14 @@ def export_record(wb):
             matchup = entry.get("Matchup")
             h = {
                 "date": date_str,
+                "matchup": str(matchup).strip() if matchup else "",
                 "result": str(result).strip() if result else None,
                 "stake": to_float(entry.get("Stake")),
                 "profit": to_float(entry.get("Profit")),
                 "runningProfit": to_float(running_profit),
                 "clv": to_float(entry.get("CLV")),
                 "runningCLV": to_float(running_clv),
-                "season": str(entry.get("Season") or "").strip(),
+                "season": str(season).strip() if season else "",
             }
             history.append(h)
 

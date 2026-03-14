@@ -1,57 +1,89 @@
 {
   "summary": {
     "w": 2,
-    "l": 3,
-    "roi": -0.376265,
-    "clv": 0.012347,
+    "l": 5,
+    "roi": -0.526919,
+    "clv": 0.041788,
     "last10w": 2,
-    "last10l": 3
+    "last10l": 5
   },
   "history": [
     {
       "date": "03/08/2026",
+      "matchup": "ILL/MD",
       "result": "L",
       "stake": 0.945,
       "profit": -0.945,
       "runningProfit": -0.945,
       "clv": -0.019986,
-      "runningCLV": -0.019986
+      "runningCLV": -0.019986,
+      "season": "2025-26"
     },
     {
       "date": "03/09/2026",
+      "matchup": "WEB/EWASH",
       "result": "L",
       "stake": 0.6898,
       "profit": -0.6898,
       "runningProfit": -1.6348,
       "clv": 0.005377,
-      "runningCLV": -0.007304
+      "runningCLV": -0.007304,
+      "season": "2025-26"
     },
     {
       "date": "03/10/2026",
+      "matchup": "WAKE/VT",
       "result": "W",
       "stake": 0.7402,
       "profit": 0.672909,
       "runningProfit": -0.961891,
       "clv": 0.10783,
-      "runningCLV": 0.031074
+      "runningCLV": 0.031074,
+      "season": "2025-26"
     },
     {
       "date": "03/11/2026",
+      "matchup": "XU/MARQ",
       "result": "W",
       "stake": 0.679,
       "profit": 0.617273,
       "runningProfit": -0.344618,
       "clv": 0.008504,
-      "runningCLV": 0.025431
+      "runningCLV": 0.025431,
+      "season": "2025-26"
     },
     {
       "date": "03/12/2026",
+      "matchup": "DAV/LOY",
       "result": "L",
       "stake": 1.2898,
       "profit": -1.2898,
       "runningProfit": -1.634418,
       "clv": -0.039992,
-      "runningCLV": 0.012347
+      "runningCLV": 0.012347,
+      "season": "2025-26"
+    },
+    {
+      "date": "03/13/2026",
+      "matchup": "MST/LT",
+      "result": "L",
+      "stake": 0.6882,
+      "profit": -0.6882,
+      "runningProfit": -2.322618,
+      "clv": 0.091028,
+      "runningCLV": 0.02546,
+      "season": "2025-26"
+    },
+    {
+      "date": "03/13/2026",
+      "matchup": "TENN/VAN",
+      "result": "L",
+      "stake": 0.6951,
+      "profit": -0.6951,
+      "runningProfit": -3.017718,
+      "clv": 0.139756,
+      "runningCLV": 0.041788,
+      "season": "2025-26"
     }
   ]
 }
