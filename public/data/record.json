@@ -1,11 +1,11 @@
 {
   "summary": {
     "w": 2,
-    "l": 5,
-    "roi": -0.526919,
-    "clv": 0.041788,
+    "l": 6,
+    "roi": -0.601649,
+    "clv": 0.034346,
     "last10w": 2,
-    "last10l": 5
+    "last10l": 6
   },
   "history": [
     {
@@ -83,6 +83,17 @@
       "runningProfit": -3.017718,
       "clv": 0.139756,
       "runningCLV": 0.041788,
+      "season": "2025-26"
+    },
+    {
+      "date": "03/13/2026",
+      "matchup": "DAV/STJOE",
+      "result": "L",
+      "stake": 1.0744,
+      "profit": -1.0744,
+      "runningProfit": -4.092118,
+      "clv": -0.01775,
+      "runningCLV": 0.034346,
       "season": "2025-26"
     }
   ]
