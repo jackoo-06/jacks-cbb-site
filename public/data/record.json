@@ -1,10 +1,10 @@
 {
   "summary": {
-    "w": 2,
-    "l": 6,
+    "w": 4,
+    "l": 7,
     "roi": -0.601649,
-    "clv": 0.034346,
-    "last10w": 2,
+    "clv": 0.024502,
+    "last10w": 4,
     "last10l": 6
   },
   "history": [
@@ -94,6 +94,39 @@
       "runningProfit": -4.092118,
       "clv": -0.01775,
       "runningCLV": 0.034346,
+      "season": "2025-26"
+    },
+    {
+      "date": "03/14/2026",
+      "matchup": "STJOE/VCU",
+      "result": "W",
+      "stake": 1.0633,
+      "profit": 0.966636,
+      "runningProfit": -3.125482,
+      "clv": 0.026651,
+      "runningCLV": 0.033491,
+      "season": "2025-26"
+    },
+    {
+      "date": "03/14/2026",
+      "matchup": "MISS/ARK",
+      "result": "L",
+      "stake": 0.8262,
+      "profit": -0.8262,
+      "runningProfit": -3.951682,
+      "clv": -0.033222,
+      "runningCLV": 0.02682,
+      "season": "2025-26"
+    },
+    {
+      "date": "03/14/2026",
+      "matchup": "KENN/LT",
+      "result": "W",
+      "stake": 0.722,
+      "profit": 0.656364,
+      "runningProfit": -3.295318,
+      "clv": 0.00133,
+      "runningCLV": 0.024502,
       "season": "2025-26"
     }
   ]
