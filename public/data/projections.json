@@ -1,71 +1,20 @@
 {
   "date": "Mar 14, 2026",
-  "updated": "08:52 PM MT",
+  "updated": "10:22 PM MT",
+  "show": true,
   "games": [
     {
       "id": 1,
-      "team1": "VCU",
-      "team2": "St. Joseph's",
-      "position": "VCU",
-      "spread": 12.8,
-      "market": 6.0,
-      "kelly": 7.1,
-      "ev": 5.7,
-      "blowout": 70,
-      "units": 1.063,
-      "bet": true
-    },
-    {
-      "id": 2,
-      "team1": "Arkansas",
-      "team2": "Ole Miss",
-      "position": "Arkansas",
-      "spread": 14.9,
-      "market": 9.0,
-      "kelly": 5.5,
-      "ev": 4.8,
-      "blowout": 71,
-      "units": 0.826,
-      "bet": true
-    },
-    {
-      "id": 3,
-      "team1": "Duke",
-      "team2": "Virginia",
-      "position": "Duke",
-      "spread": 15.6,
-      "market": 8.5,
-      "kelly": 7.1,
-      "ev": 5.7,
-      "blowout": 75,
+      "team1": "#N/A",
+      "team2": "#N/A",
+      "position": "#N/A",
+      "spread": 0.0,
+      "market": 0.0,
+      "kelly": 0.0,
+      "ev": 0.0,
+      "blowout": 0,
       "units": 0.0,
       "bet": false
-    },
-    {
-      "id": 4,
-      "team1": "Pennsylvania",
-      "team2": "Harvard",
-      "position": "Pennsylvania",
-      "spread": 2.2,
-      "market": -3.5,
-      "kelly": 6.8,
-      "ev": 5.5,
-      "blowout": 41,
-      "units": 0.0,
-      "bet": false
-    },
-    {
-      "id": 5,
-      "team1": "Kennesaw State",
-      "team2": "Louisiana Tech",
-      "position": "Kennesaw State",
-      "spread": 6.3,
-      "market": 1.5,
-      "kelly": 4.8,
-      "ev": 4.4,
-      "blowout": 47,
-      "units": 0.722,
-      "bet": true
     }
   ]
 }

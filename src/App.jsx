@@ -371,7 +371,15 @@ function Projections({ goToArticle }) {
           </div>
         );
       })()}
-
+{(projData.show === false || games.length === 0) && (
+        <div style={{
+          padding: "40px 0", textAlign: "center", fontFamily: font.serif,
+          fontSize: 18, color: C.textDim, fontStyle: "italic",
+        }}>
+          No +EV Projections today
+        </div>
+      )}
+      )}
       {/* Date + sort */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20, flexWrap: "wrap", gap: 8 }}>
         <h2 style={{ fontFamily: font.serif, fontSize: 22, fontWeight: 400, color: C.white, margin: 0 }}>

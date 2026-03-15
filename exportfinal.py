@@ -151,6 +151,9 @@ def to_int(val, default=0):
 def export_projections(wb):
     rows = read_sheet(wb, "Projections")
     if not rows: return None
+    ws = wb["Projections"]
+    show_flag = ws["L2"].value
+    show = str(show_flag).strip().lower() != "no" if show_flag else True
     games = []
     for i, r in enumerate(rows):
         t1, t2 = col(r, PROJ_TEAM1), col(r, PROJ_TEAM2)
@@ -185,6 +188,7 @@ def export_projections(wb):
     return {
         "date": datetime.now().strftime("%b %d, %Y"),
         "updated": datetime.now().strftime("%I:%M %p MT"),
+        "show": show,
         "games": games,
     }
 
