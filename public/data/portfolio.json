@@ -44,8 +44,34 @@
       "odds": "+20000",
       "staked": 0.15,
       "currentOdds": "+50000",
-      "status": "open",
+      "status": "closed",
       "date": "04/25/2025",
+      "notes": "",
+      "result": "L",
+      "pnl": -0.15
+    },
+    {
+      "id": 5,
+      "season": "2025-26",
+      "category": "EAST REGION WINNER",
+      "team": "Michigan State",
+      "odds": "+816",
+      "staked": 0.85,
+      "currentOdds": "+816",
+      "status": "open",
+      "date": "03/15/2025",
+      "notes": ""
+    },
+    {
+      "id": 6,
+      "season": "2025-26",
+      "category": "MIDWEST REGION WINNER",
+      "team": "Tennessee",
+      "odds": "+1725",
+      "staked": 0.45,
+      "currentOdds": "+1725",
+      "status": "open",
+      "date": "03/15/2025",
       "notes": ""
     }
   ]
