@@ -73,6 +73,66 @@
       "status": "open",
       "date": "03/15/2025",
       "notes": ""
+    },
+    {
+      "id": 7,
+      "season": "2025-26",
+      "category": "REACH SWEET 16 - YES",
+      "team": "UCLA",
+      "odds": "+281",
+      "staked": 0.65,
+      "currentOdds": "+281",
+      "status": "open",
+      "date": "03/16/2025",
+      "notes": ""
+    },
+    {
+      "id": 8,
+      "season": "2025-26",
+      "category": "REACH SWEET 16 - YES",
+      "team": "Tennessee",
+      "odds": "+155",
+      "staked": 1.0,
+      "currentOdds": "+155",
+      "status": "open",
+      "date": "03/16/2025",
+      "notes": ""
+    },
+    {
+      "id": 9,
+      "season": "2025-26",
+      "category": "REACH SWEET 16 - NO",
+      "team": "Virginia",
+      "odds": "+111",
+      "staked": 0.5,
+      "currentOdds": "+111",
+      "status": "open",
+      "date": "03/16/2025",
+      "notes": ""
+    },
+    {
+      "id": 10,
+      "season": "2025-26",
+      "category": "REACH SWEET 16 - YES",
+      "team": "Michigan State",
+      "odds": "-144",
+      "staked": 1.44,
+      "currentOdds": "-144",
+      "status": "open",
+      "date": "03/16/2025",
+      "notes": ""
+    },
+    {
+      "id": 11,
+      "season": "2025-26",
+      "category": "REACH SWEET 16 - NO",
+      "team": "Nebraska",
+      "odds": "-142",
+      "staked": 1.065,
+      "currentOdds": "-142",
+      "status": "open",
+      "date": "03/16/2025",
+      "notes": ""
     }
   ]
 }
