@@ -1,11 +1,11 @@
 {
   "summary": {
-    "w": 4,
+    "w": 5,
     "l": 7,
     "roi": -0.601649,
-    "clv": 0.024502,
-    "last10w": 4,
-    "last10l": 6
+    "clv": 0.031136,
+    "last10w": 5,
+    "last10l": 5
   },
   "history": [
     {
@@ -127,6 +127,17 @@
       "runningProfit": -3.295318,
       "clv": 0.00133,
       "runningCLV": 0.024502,
+      "season": "2025-26"
+    },
+    {
+      "date": "03/17/2026",
+      "matchup": "HOW/UMBC",
+      "result": "W",
+      "stake": 0.7091,
+      "profit": 0.675333,
+      "runningProfit": -2.619985,
+      "clv": 0.104109,
+      "runningCLV": 0.031136,
       "season": "2025-26"
     }
   ]
