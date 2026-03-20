@@ -1,218 +1,10 @@
 {
   "date": "Mar 20, 2026",
-  "updated": "07:20 AM MT",
+  "updated": "05:33 PM MT",
   "show": true,
   "games": [
     {
       "id": 1,
-      "team1": "Texas Tech",
-      "team2": "Akron",
-      "position": "Texas Tech",
-      "spread": 10.1,
-      "market": 7.5,
-      "kelly": 0.0,
-      "ev": 2.0,
-      "blowout": 47,
-      "units": 0.0,
-      "bet": false
-    },
-    {
-      "id": 2,
-      "team1": "Alabama",
-      "team2": "Hofstra",
-      "position": "Alabama",
-      "spread": 21.4,
-      "market": 14.0,
-      "kelly": 6.3,
-      "ev": 5.5,
-      "blowout": 82,
-      "units": 0.946,
-      "bet": true
-    },
-    {
-      "id": 3,
-      "team1": "Florida",
-      "team2": "Prairie View A&M",
-      "position": "Florida",
-      "spread": 35.0,
-      "market": 35.0,
-      "kelly": 0.0,
-      "ev": -1.1,
-      "blowout": 82,
-      "units": 0.0,
-      "bet": false
-    },
-    {
-      "id": 4,
-      "team1": "Clemson",
-      "team2": "Iowa",
-      "position": "Clemson",
-      "spread": 0.0,
-      "market": -2.0,
-      "kelly": 0.0,
-      "ev": 1.3,
-      "blowout": 12,
-      "units": 0.0,
-      "bet": false
-    },
-    {
-      "id": 5,
-      "team1": "UCLA",
-      "team2": "UCF",
-      "position": "UCLA",
-      "spread": 7.0,
-      "market": 5.5,
-      "kelly": 0.0,
-      "ev": 0.7,
-      "blowout": 32,
-      "units": 0.0,
-      "bet": false
-    },
-    {
-      "id": 6,
-      "team1": "Uconn",
-      "team2": "Furman",
-      "position": "Uconn",
-      "spread": 25.6,
-      "market": 20.5,
-      "kelly": 0.0,
-      "ev": 3.5,
-      "blowout": 82,
-      "units": 0.0,
-      "bet": false
-    },
-    {
-      "id": 7,
-      "team1": "Tennessee",
-      "team2": "Miami (OH)",
-      "position": "Tennessee",
-      "spread": 17.8,
-      "market": 11.0,
-      "kelly": 4.9,
-      "ev": 5.3,
-      "blowout": 77,
-      "units": 0.731,
-      "bet": true
-    },
-    {
-      "id": 8,
-      "team1": "Virginia",
-      "team2": "Wright State",
-      "position": "Virginia",
-      "spread": 20.1,
-      "market": 18.0,
-      "kelly": 0.0,
-      "ev": 1.1,
-      "blowout": 67,
-      "units": 0.0,
-      "bet": false
-    },
-    {
-      "id": 9,
-      "team1": "Miami",
-      "team2": "Missouri",
-      "position": "Miami",
-      "spread": 4.5,
-      "market": 2.0,
-      "kelly": 0.0,
-      "ev": 1.8,
-      "blowout": 29,
-      "units": 0.0,
-      "bet": false
-    },
-    {
-      "id": 10,
-      "team1": "Purdue",
-      "team2": "Queens University",
-      "position": "Purdue",
-      "spread": 28.5,
-      "market": 25.0,
-      "kelly": 0.0,
-      "ev": 2.1,
-      "blowout": 82,
-      "units": 0.0,
-      "bet": false
-    },
-    {
-      "id": 11,
-      "team1": "Kentucky",
-      "team2": "Santa Clara",
-      "position": "Kentucky",
-      "spread": 5.7,
-      "market": 3.0,
-      "kelly": 0.0,
-      "ev": 2.0,
-      "blowout": 34,
-      "units": 0.0,
-      "bet": false
-    },
-    {
-      "id": 12,
-      "team1": "Iowa State",
-      "team2": "Tennessee State",
-      "position": "Iowa State",
-      "spread": 28.2,
-      "market": 24.5,
-      "kelly": 0.0,
-      "ev": 2.2,
-      "blowout": 82,
-      "units": 0.0,
-      "bet": false
-    },
-    {
-      "id": 13,
-      "team1": "St. John's",
-      "team2": "Northern Iowa",
-      "position": "St. John's",
-      "spread": 12.0,
-      "market": 10.0,
-      "kelly": 0.0,
-      "ev": 1.2,
-      "blowout": 49,
-      "units": 0.0,
-      "bet": false
-    },
-    {
-      "id": 14,
-      "team1": "Kansas",
-      "team2": "California Baptist",
-      "position": "Kansas",
-      "spread": 20.3,
-      "market": 14.0,
-      "kelly": 0.0,
-      "ev": 4.7,
-      "blowout": 79,
-      "units": 0.0,
-      "bet": false
-    },
-    {
-      "id": 15,
-      "team1": "Arizona",
-      "team2": "Long Island University",
-      "position": "Arizona",
-      "spread": 32.4,
-      "market": 31.0,
-      "kelly": 0.0,
-      "ev": 0.1,
-      "blowout": 82,
-      "units": 0.0,
-      "bet": false
-    },
-    {
-      "id": 16,
-      "team1": "Villanova",
-      "team2": "Utah State",
-      "position": "Villanova",
-      "spread": -0.2,
-      "market": -2.0,
-      "kelly": 0.0,
-      "ev": 1.0,
-      "blowout": 10,
-      "units": 0.0,
-      "bet": false
-    },
-    {
-      "id": 17,
       "team1": "Michigan State",
       "team2": "Louisville",
       "position": "Michigan State",
@@ -225,7 +17,7 @@
       "bet": false
     },
     {
-      "id": 18,
+      "id": 2,
       "team1": "Michigan",
       "team2": "Saint Louis",
       "position": "Michigan",
@@ -238,7 +30,7 @@
       "bet": false
     },
     {
-      "id": 19,
+      "id": 3,
       "team1": "Duke",
       "team2": "TCU",
       "position": "Duke",
@@ -251,7 +43,7 @@
       "bet": false
     },
     {
-      "id": 20,
+      "id": 4,
       "team1": "Illinois",
       "team2": "VCU",
       "position": "Illinois",
@@ -264,7 +56,7 @@
       "bet": false
     },
     {
-      "id": 21,
+      "id": 5,
       "team1": "Nebraska",
       "team2": "Vanderbilt",
       "position": "Nebraska",
@@ -277,7 +69,7 @@
       "bet": false
     },
     {
-      "id": 22,
+      "id": 6,
       "team1": "Houston",
       "team2": "Texas A&M",
       "position": "Houston",
@@ -290,7 +82,7 @@
       "bet": false
     },
     {
-      "id": 23,
+      "id": 7,
       "team1": "Arkansas",
       "team2": "High Point",
       "position": "Arkansas",
@@ -303,7 +95,7 @@
       "bet": false
     },
     {
-      "id": 24,
+      "id": 8,
       "team1": "Gonzaga",
       "team2": "Texas",
       "position": "Gonzaga",

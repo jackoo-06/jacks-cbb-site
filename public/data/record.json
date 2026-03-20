@@ -1,11 +1,11 @@
 {
   "summary": {
-    "w": 8,
+    "w": 11,
     "l": 8,
-    "roi": -0.059835,
-    "clv": 0.025783,
-    "last10w": 6,
-    "last10l": 4
+    "roi": 0.078716,
+    "clv": 0.021311,
+    "last10w": 8,
+    "last10l": 2
   },
   "history": [
     {
@@ -182,6 +182,39 @@
       "runningProfit": -0.81566,
       "clv": -0.030877,
       "runningCLV": 0.025783,
+      "season": "2025-26"
+    },
+    {
+      "date": "03/20/2026",
+      "matchup": "ALA/HOFS",
+      "result": "W",
+      "stake": 0.946,
+      "profit": 0.946,
+      "runningProfit": 0.13034,
+      "clv": -0.069519,
+      "runningCLV": 0.020177,
+      "season": "2025-26"
+    },
+    {
+      "date": "03/20/2026",
+      "matchup": "ALA/HOFS",
+      "result": "W",
+      "stake": 0.473,
+      "profit": 0.422321,
+      "runningProfit": 0.552662,
+      "clv": 0.017153,
+      "runningCLV": 0.020009,
+      "season": "2025-26"
+    },
+    {
+      "date": "03/20/2026",
+      "matchup": "TEN/MIAOH",
+      "result": "W",
+      "stake": 0.731,
+      "profit": 0.689623,
+      "runningProfit": 1.242284,
+      "clv": 0.044746,
+      "runningCLV": 0.021311,
       "season": "2025-26"
     }
   ]
