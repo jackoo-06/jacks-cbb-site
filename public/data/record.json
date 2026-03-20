@@ -1,11 +1,11 @@
 {
   "summary": {
-    "w": 5,
-    "l": 7,
-    "roi": -0.601649,
-    "clv": 0.031136,
-    "last10w": 5,
-    "last10l": 5
+    "w": 8,
+    "l": 8,
+    "roi": -0.059835,
+    "clv": 0.025783,
+    "last10w": 6,
+    "last10l": 4
   },
   "history": [
     {
@@ -138,6 +138,50 @@
       "runningProfit": -2.619985,
       "clv": 0.104109,
       "runningCLV": 0.031136,
+      "season": "2025-26"
+    },
+    {
+      "date": "03/19/2026",
+      "matchup": "NEB/TROY",
+      "result": "W",
+      "stake": 1.0296,
+      "profit": 1.0296,
+      "runningProfit": -1.590385,
+      "clv": 0.00606,
+      "runningCLV": 0.029207,
+      "season": "2025-26"
+    },
+    {
+      "date": "03/19/2026",
+      "matchup": "VAN/MCN",
+      "result": "L",
+      "stake": 0.7798,
+      "profit": -0.7798,
+      "runningProfit": -2.370185,
+      "clv": 0.05931,
+      "runningCLV": 0.031357,
+      "season": "2025-26"
+    },
+    {
+      "date": "03/19/2026",
+      "matchup": "MSU/NDSU",
+      "result": "W",
+      "stake": 0.8301,
+      "profit": 0.741161,
+      "runningProfit": -1.629024,
+      "clv": 0.004408,
+      "runningCLV": 0.029561,
+      "season": "2025-26"
+    },
+    {
+      "date": "03/19/2026",
+      "matchup": "ARK/HAWAII",
+      "result": "W",
+      "stake": 0.8703,
+      "profit": 0.813364,
+      "runningProfit": -0.81566,
+      "clv": -0.030877,
+      "runningCLV": 0.025783,
       "season": "2025-26"
     }
   ]

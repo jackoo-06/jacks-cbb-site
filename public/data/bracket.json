@@ -1,80 +1,80 @@
 {
-  "updated": "Mar 18, 2026",
+  "updated": "Mar 20, 2026",
   "regions": {
     "East": [
       {
         "seed": 1,
         "team": "Duke",
         "rating": 23.1,
-        "r32": 98.0,
-        "r16": 73.3,
-        "e8": 53.2,
-        "f4": 35.1,
-        "cg": 20.6,
-        "champ": 11.8
+        "r32": 100.0,
+        "r16": 77.5,
+        "e8": 56.3,
+        "f4": 36.7,
+        "cg": 21.4,
+        "champ": 11.9
       },
       {
         "seed": 2,
         "team": "Uconn",
         "rating": 18.1,
         "r32": 90.0,
-        "r16": 54.5,
-        "e8": 27.5,
-        "f4": 12.7,
-        "cg": 5.7,
-        "champ": 2.2
+        "r16": 54.1,
+        "e8": 25.8,
+        "f4": 11.7,
+        "cg": 5.3,
+        "champ": 2.1
       },
       {
         "seed": 3,
         "team": "Michigan State",
         "rating": 20.0,
-        "r32": 87.9,
-        "r16": 57.6,
-        "e8": 35.0,
-        "f4": 17.7,
-        "cg": 8.8,
+        "r32": 100.0,
+        "r16": 60.2,
+        "e8": 36.3,
+        "f4": 18.4,
+        "cg": 9.4,
         "champ": 4.3
       },
       {
         "seed": 4,
         "team": "Kansas",
         "rating": 16.8,
-        "r32": 80.4,
-        "r16": 48.5,
-        "e8": 19.3,
-        "f4": 9.3,
-        "cg": 3.9,
+        "r32": 80.8,
+        "r16": 49.1,
+        "e8": 19.1,
+        "f4": 8.8,
+        "cg": 3.7,
         "champ": 1.4
       },
       {
         "seed": 5,
         "team": "St. John's",
         "rating": 15.1,
-        "r32": 66.6,
-        "r16": 34.7,
+        "r32": 65.8,
+        "r16": 33.8,
         "e8": 11.8,
         "f4": 5.1,
         "cg": 1.9,
-        "champ": 0.7
+        "champ": 0.6
       },
       {
         "seed": 6,
         "team": "Louisville",
         "rating": 16.6,
-        "r32": 64.7,
-        "r16": 29.4,
-        "e8": 15.0,
-        "f4": 6.3,
-        "cg": 2.7,
-        "champ": 1.0
+        "r32": 100.0,
+        "r16": 39.8,
+        "e8": 20.3,
+        "f4": 8.3,
+        "cg": 3.4,
+        "champ": 1.3
       },
       {
         "seed": 7,
         "team": "UCLA",
         "rating": 15.9,
-        "r32": 61.1,
-        "r16": 28.8,
-        "e8": 12.8,
+        "r32": 61.5,
+        "r16": 29.5,
+        "e8": 12.5,
         "f4": 5.0,
         "cg": 2.0,
         "champ": 0.7
@@ -83,63 +83,63 @@
         "seed": 8,
         "team": "Ohio State",
         "rating": 14.7,
-        "r32": 53.7,
-        "r16": 15.4,
-        "e8": 7.6,
-        "f4": 3.3,
-        "cg": 1.2,
-        "champ": 0.4
+        "r32": 0.0,
+        "r16": 0.0,
+        "e8": 0.0,
+        "f4": 0.0,
+        "cg": 0.0,
+        "champ": 0.0
       },
       {
         "seed": 9,
         "team": "TCU",
         "rating": 12.7,
-        "r32": 46.3,
-        "r16": 11.2,
-        "e8": 4.8,
-        "f4": 1.8,
-        "cg": 0.6,
-        "champ": 0.2
+        "r32": 100.0,
+        "r16": 22.5,
+        "e8": 9.6,
+        "f4": 3.6,
+        "cg": 1.1,
+        "champ": 0.4
       },
       {
         "seed": 10,
         "team": "UCF",
         "rating": 12.8,
-        "r32": 38.9,
-        "r16": 15.1,
-        "e8": 5.6,
-        "f4": 1.8,
-        "cg": 0.6,
+        "r32": 38.5,
+        "r16": 14.8,
+        "e8": 5.0,
+        "f4": 1.6,
+        "cg": 0.5,
         "champ": 0.1
       },
       {
         "seed": 11,
         "team": "South Florida",
         "rating": 10.6,
-        "r32": 35.3,
-        "r16": 10.3,
-        "e8": 3.6,
-        "f4": 0.9,
-        "cg": 0.3,
-        "champ": 0.1
+        "r32": 0.0,
+        "r16": 0.0,
+        "e8": 0.0,
+        "f4": 0.0,
+        "cg": 0.0,
+        "champ": 0.0
       },
       {
         "seed": 12,
         "team": "Northern Iowa",
         "rating": 9.0,
-        "r32": 33.4,
+        "r32": 34.2,
         "r16": 11.7,
-        "e8": 2.5,
+        "e8": 2.4,
         "f4": 0.7,
-        "cg": 0.1,
-        "champ": 0.0
+        "cg": 0.2,
+        "champ": 0.1
       },
       {
         "seed": 13,
         "team": "California Baptist",
         "rating": 4.7,
-        "r32": 19.6,
-        "r16": 5.1,
+        "r32": 19.2,
+        "r16": 5.5,
         "e8": 0.7,
         "f4": 0.1,
         "cg": 0.0,
@@ -149,10 +149,10 @@
         "seed": 14,
         "team": "North Dakota State",
         "rating": 3.9,
-        "r32": 12.1,
-        "r16": 2.7,
-        "e8": 0.5,
-        "f4": 0.1,
+        "r32": 0.0,
+        "r16": 0.0,
+        "e8": 0.0,
+        "f4": 0.0,
         "cg": 0.0,
         "champ": 0.0
       },
@@ -171,8 +171,8 @@
         "seed": 16,
         "team": "Siena",
         "rating": -9.5,
-        "r32": 2.0,
-        "r16": 0.1,
+        "r32": 0.0,
+        "r16": 0.0,
         "e8": 0.0,
         "f4": 0.0,
         "cg": 0.0,
@@ -184,11 +184,11 @@
         "seed": 1,
         "team": "Arizona",
         "rating": 23.7,
-        "r32": 97.0,
-        "r16": 72.6,
-        "e8": 48.4,
-        "f4": 30.5,
-        "cg": 18.1,
+        "r32": 96.8,
+        "r16": 73.1,
+        "e8": 48.6,
+        "f4": 30.6,
+        "cg": 18.2,
         "champ": 11.1
       },
       {
@@ -196,64 +196,64 @@
         "team": "Purdue",
         "rating": 20.9,
         "r32": 94.2,
-        "r16": 70.3,
-        "e8": 40.2,
-        "f4": 20.6,
-        "cg": 10.8,
-        "champ": 5.9
+        "r16": 70.0,
+        "e8": 38.8,
+        "f4": 19.7,
+        "cg": 10.1,
+        "champ": 5.0
       },
       {
         "seed": 3,
         "team": "Gonzaga",
         "rating": 21.0,
-        "r32": 85.3,
-        "r16": 54.7,
-        "e8": 31.2,
-        "f4": 15.8,
-        "cg": 8.2,
-        "champ": 4.3
+        "r32": 100.0,
+        "r16": 68.5,
+        "e8": 39.1,
+        "f4": 19.4,
+        "cg": 10.1,
+        "champ": 5.4
       },
       {
         "seed": 4,
         "team": "Arkansas",
         "rating": 19.9,
-        "r32": 87.8,
-        "r16": 58.2,
-        "e8": 26.8,
-        "f4": 13.9,
-        "cg": 7.0,
-        "champ": 3.6
+        "r32": 100.0,
+        "r16": 77.6,
+        "e8": 35.2,
+        "f4": 18.1,
+        "cg": 9.1,
+        "champ": 4.5
       },
       {
         "seed": 5,
         "team": "Wisconsin",
         "rating": 16.1,
-        "r32": 67.4,
-        "r16": 29.6,
-        "e8": 10.7,
-        "f4": 4.5,
-        "cg": 1.8,
-        "champ": 0.8
+        "r32": 0.0,
+        "r16": 0.0,
+        "e8": 0.0,
+        "f4": 0.0,
+        "cg": 0.0,
+        "champ": 0.0
       },
       {
         "seed": 6,
         "team": "BYU",
         "rating": 17.0,
-        "r32": 57.5,
-        "r16": 25.3,
-        "e8": 11.7,
-        "f4": 4.9,
-        "cg": 2.1,
-        "champ": 0.7
+        "r32": 0.0,
+        "r16": 0.0,
+        "e8": 0.0,
+        "f4": 0.0,
+        "cg": 0.0,
+        "champ": 0.0
       },
       {
         "seed": 7,
         "team": "Miami",
         "rating": 12.2,
         "r32": 57.2,
-        "r16": 16.6,
+        "r16": 16.9,
         "e8": 5.4,
-        "f4": 1.4,
+        "f4": 1.5,
         "cg": 0.4,
         "champ": 0.1
       },
@@ -263,9 +263,9 @@
         "rating": 11.8,
         "r32": 41.2,
         "r16": 8.8,
-        "e8": 3.0,
+        "e8": 3.1,
         "f4": 0.9,
-        "cg": 0.2,
+        "cg": 0.3,
         "champ": 0.1
       },
       {
@@ -273,52 +273,52 @@
         "team": "Utah State",
         "rating": 16.3,
         "r32": 58.8,
-        "r16": 18.4,
-        "e8": 8.6,
-        "f4": 3.5,
-        "cg": 1.3,
-        "champ": 0.6
+        "r16": 17.8,
+        "e8": 8.3,
+        "f4": 3.3,
+        "cg": 1.4,
+        "champ": 0.5
       },
       {
         "seed": 10,
         "team": "Missouri",
         "rating": 11.9,
         "r32": 42.8,
-        "r16": 12.1,
-        "e8": 4.0,
-        "f4": 1.1,
-        "cg": 0.3,
+        "r16": 12.3,
+        "e8": 3.8,
+        "f4": 1.2,
+        "cg": 0.4,
         "champ": 0.1
       },
       {
         "seed": 11,
         "team": "Texas",
         "rating": 14.5,
-        "r32": 42.5,
-        "r16": 16.2,
-        "e8": 6.6,
-        "f4": 2.2,
-        "cg": 0.7,
-        "champ": 0.2
+        "r32": 100.0,
+        "r16": 31.5,
+        "e8": 12.7,
+        "f4": 4.2,
+        "cg": 1.5,
+        "champ": 0.5
       },
       {
         "seed": 12,
         "team": "High Point",
         "rating": 9.8,
-        "r32": 32.6,
-        "r16": 9.6,
-        "e8": 2.2,
-        "f4": 0.6,
-        "cg": 0.2,
-        "champ": 0.0
+        "r32": 100.0,
+        "r16": 22.4,
+        "e8": 4.8,
+        "f4": 1.2,
+        "cg": 0.3,
+        "champ": 0.1
       },
       {
         "seed": 13,
         "team": "Hawaii",
         "rating": 2.6,
-        "r32": 12.2,
-        "r16": 2.5,
-        "e8": 0.3,
+        "r32": 0.0,
+        "r16": 0.0,
+        "e8": 0.0,
         "f4": 0.0,
         "cg": 0.0,
         "champ": 0.0
@@ -327,10 +327,10 @@
         "seed": 14,
         "team": "Kennesaw State",
         "rating": 7.0,
-        "r32": 14.7,
-        "r16": 3.8,
-        "e8": 0.8,
-        "f4": 0.1,
+        "r32": 0.0,
+        "r16": 0.0,
+        "e8": 0.0,
+        "f4": 0.0,
         "cg": 0.0,
         "champ": 0.0
       },
@@ -339,7 +339,7 @@
         "team": "Queens University",
         "rating": -2.4,
         "r32": 5.8,
-        "r16": 1.0,
+        "r16": 0.8,
         "e8": 0.1,
         "f4": 0.0,
         "cg": 0.0,
@@ -349,8 +349,8 @@
         "seed": 16,
         "team": "Long Island University",
         "rating": -5.3,
-        "r32": 3.0,
-        "r16": 0.2,
+        "r32": 3.2,
+        "r16": 0.3,
         "e8": 0.0,
         "f4": 0.0,
         "cg": 0.0,
@@ -362,140 +362,140 @@
         "seed": 1,
         "team": "Michigan",
         "rating": 23.2,
-        "r32": 97.3,
-        "r16": 74.2,
-        "e8": 48.9,
-        "f4": 31.2,
-        "cg": 18.1,
-        "champ": 10.8
+        "r32": 100.0,
+        "r16": 77.4,
+        "e8": 50.8,
+        "f4": 31.4,
+        "cg": 18.0,
+        "champ": 11.0
       },
       {
         "seed": 2,
         "team": "Iowa State",
         "rating": 20.6,
-        "r32": 91.5,
-        "r16": 55.0,
-        "e8": 33.9,
+        "r32": 91.3,
+        "r16": 54.8,
+        "e8": 33.7,
         "f4": 17.1,
-        "cg": 8.7,
-        "champ": 4.6
+        "cg": 8.4,
+        "champ": 4.4
       },
       {
         "seed": 3,
         "team": "Virginia",
         "rating": 12.9,
-        "r32": 79.4,
-        "r16": 28.0,
-        "e8": 9.4,
-        "f4": 2.7,
-        "cg": 0.8,
+        "r32": 79.0,
+        "r16": 29.6,
+        "e8": 9.7,
+        "f4": 3.0,
+        "cg": 0.9,
         "champ": 0.3
       },
       {
         "seed": 4,
         "team": "Alabama",
         "rating": 19.7,
-        "r32": 88.3,
-        "r16": 56.1,
-        "e8": 26.3,
-        "f4": 14.2,
-        "cg": 6.7,
-        "champ": 3.3
+        "r32": 87.4,
+        "r16": 55.3,
+        "e8": 25.6,
+        "f4": 13.7,
+        "cg": 6.2,
+        "champ": 3.2
       },
       {
         "seed": 5,
         "team": "Texas Tech",
         "rating": 17.1,
         "r32": 66.8,
-        "r16": 31.4,
-        "e8": 12.2,
-        "f4": 5.6,
-        "cg": 2.3,
+        "r16": 31.8,
+        "e8": 12.4,
+        "f4": 5.4,
+        "cg": 2.2,
         "champ": 0.9
       },
       {
         "seed": 6,
         "team": "Tennessee",
         "rating": 20.6,
-        "r32": 66.2,
-        "r16": 49.8,
-        "e8": 26.9,
-        "f4": 13.5,
-        "cg": 6.7,
-        "champ": 3.5
+        "r32": 77.9,
+        "r16": 58.0,
+        "e8": 31.7,
+        "f4": 16.0,
+        "cg": 7.8,
+        "champ": 3.9
       },
       {
         "seed": 7,
         "team": "Kentucky",
         "rating": 18.0,
-        "r32": 60.0,
-        "r16": 27.4,
-        "e8": 14.6,
-        "f4": 6.2,
-        "cg": 2.5,
+        "r32": 60.1,
+        "r16": 28.0,
+        "e8": 14.7,
+        "f4": 6.4,
+        "cg": 2.7,
         "champ": 1.1
       },
       {
         "seed": 8,
         "team": "Georgia",
         "rating": 14.1,
-        "r32": 51.9,
-        "r16": 14.0,
-        "e8": 5.8,
-        "f4": 2.1,
-        "cg": 0.7,
-        "champ": 0.2
+        "r32": 0.0,
+        "r16": 0.0,
+        "e8": 0.0,
+        "f4": 0.0,
+        "cg": 0.0,
+        "champ": 0.0
       },
       {
         "seed": 9,
         "team": "Saint Louis",
         "rating": 12.9,
-        "r32": 48.1,
-        "r16": 11.6,
-        "e8": 4.2,
-        "f4": 1.5,
-        "cg": 0.4,
-        "champ": 0.1
+        "r32": 100.0,
+        "r16": 22.6,
+        "e8": 8.5,
+        "f4": 3.0,
+        "cg": 0.8,
+        "champ": 0.2
       },
       {
         "seed": 10,
         "team": "Santa Clara",
         "rating": 15.7,
-        "r32": 40.0,
-        "r16": 16.5,
-        "e8": 7.9,
-        "f4": 3.0,
-        "cg": 1.1,
-        "champ": 0.4
+        "r32": 39.9,
+        "r16": 16.1,
+        "e8": 7.5,
+        "f4": 2.9,
+        "cg": 1.0,
+        "champ": 0.3
       },
       {
         "seed": 11,
-        "team": "SMU",
-        "rating": 13.7,
-        "r32": 33.8,
-        "r16": 19.5,
-        "e8": 6.8,
-        "f4": 2.2,
-        "cg": 0.7,
-        "champ": 0.3
+        "team": "Miami (OH)",
+        "rating": 7.7,
+        "r32": 22.1,
+        "r16": 8.8,
+        "e8": 1.9,
+        "f4": 0.4,
+        "cg": 0.1,
+        "champ": 0.0
       },
       {
         "seed": 12,
         "team": "Akron",
         "rating": 10.6,
         "r32": 33.2,
-        "r16": 10.1,
+        "r16": 10.6,
         "e8": 2.5,
         "f4": 0.8,
-        "cg": 0.2,
+        "cg": 0.1,
         "champ": 0.0
       },
       {
         "seed": 13,
         "team": "Hofstra",
         "rating": 2.1,
-        "r32": 11.7,
-        "r16": 2.4,
+        "r32": 12.6,
+        "r16": 2.3,
         "e8": 0.2,
         "f4": 0.0,
         "cg": 0.0,
@@ -505,9 +505,9 @@
         "seed": 14,
         "team": "Wright State",
         "rating": 3.1,
-        "r32": 20.6,
-        "r16": 2.7,
-        "e8": 0.3,
+        "r32": 21.0,
+        "r16": 3.6,
+        "e8": 0.5,
         "f4": 0.0,
         "cg": 0.0,
         "champ": 0.0
@@ -516,7 +516,7 @@
         "seed": 15,
         "team": "Tennessee State",
         "rating": 1.1,
-        "r32": 8.5,
+        "r32": 8.7,
         "r16": 1.1,
         "e8": 0.2,
         "f4": 0.0,
@@ -527,8 +527,8 @@
         "seed": 16,
         "team": "Howard",
         "rating": -7.2,
-        "r32": 2.7,
-        "r16": 0.2,
+        "r32": 0.0,
+        "r16": 0.0,
         "e8": 0.0,
         "f4": 0.0,
         "cg": 0.0,
@@ -540,98 +540,98 @@
         "seed": 1,
         "team": "Florida",
         "rating": 22.7,
-        "r32": 97.9,
-        "r16": 72.7,
-        "e8": 47.8,
-        "f4": 30.2,
-        "cg": 18.2,
-        "champ": 10.1
+        "r32": 98.2,
+        "r16": 72.6,
+        "e8": 45.9,
+        "f4": 28.6,
+        "cg": 17.0,
+        "champ": 9.4
       },
       {
         "seed": 2,
         "team": "Houston",
         "rating": 20.9,
-        "r32": 88.9,
-        "r16": 61.0,
-        "e8": 38.1,
-        "f4": 20.8,
-        "cg": 11.3,
-        "champ": 5.4
+        "r32": 100.0,
+        "r16": 71.7,
+        "e8": 44.4,
+        "f4": 23.2,
+        "cg": 12.5,
+        "champ": 6.3
       },
       {
         "seed": 3,
         "team": "Illinois",
         "rating": 18.8,
-        "r32": 91.0,
-        "r16": 61.6,
-        "e8": 32.5,
-        "f4": 15.3,
-        "cg": 7.5,
-        "champ": 3.3
+        "r32": 100.0,
+        "r16": 73.5,
+        "e8": 36.7,
+        "f4": 17.2,
+        "cg": 8.3,
+        "champ": 3.6
       },
       {
         "seed": 4,
         "team": "Nebraska",
         "rating": 15.8,
-        "r32": 84.0,
-        "r16": 39.4,
-        "e8": 14.9,
-        "f4": 6.3,
-        "cg": 2.6,
+        "r32": 100.0,
+        "r16": 39.5,
+        "e8": 14.8,
+        "f4": 6.5,
+        "cg": 2.7,
         "champ": 0.9
       },
       {
         "seed": 5,
         "team": "Vanderbilt",
         "rating": 19.3,
-        "r32": 77.2,
-        "r16": 50.3,
-        "e8": 23.8,
-        "f4": 12.8,
-        "cg": 6.3,
-        "champ": 2.8
+        "r32": 100.0,
+        "r16": 60.5,
+        "e8": 28.5,
+        "f4": 14.9,
+        "cg": 7.2,
+        "champ": 3.2
       },
       {
         "seed": 6,
         "team": "North Carolina",
         "rating": 14.0,
-        "r32": 59.7,
-        "r16": 24.0,
-        "e8": 9.0,
-        "f4": 3.1,
-        "cg": 1.2,
-        "champ": 0.3
+        "r32": 0.0,
+        "r16": 0.0,
+        "e8": 0.0,
+        "f4": 0.0,
+        "cg": 0.0,
+        "champ": 0.0
       },
       {
         "seed": 7,
         "team": "Saint Mary's",
         "rating": 15.0,
-        "r32": 59.2,
-        "r16": 22.1,
-        "e8": 10.1,
-        "f4": 3.7,
-        "cg": 1.4,
-        "champ": 0.5
+        "r32": 0.0,
+        "r16": 0.0,
+        "e8": 0.0,
+        "f4": 0.0,
+        "cg": 0.0,
+        "champ": 0.0
       },
       {
         "seed": 8,
         "team": "Clemson",
         "rating": 11.0,
-        "r32": 41.5,
+        "r32": 41.7,
         "r16": 9.0,
-        "e8": 3.0,
-        "f4": 0.9,
-        "cg": 0.3,
-        "champ": 0.1
+        "e8": 2.8,
+        "f4": 0.8,
+        "cg": 0.2,
+        "champ": 0.0
       },
       {
         "seed": 9,
         "team": "Iowa",
         "rating": 15.5,
-        "r32": 58.5,
+        "r32": 58.3,
         "r16": 18.3,
-        "e8": 8.7,
-        "f4": 3.6,
+        "e8": 7.9,
+        "f4": 3.3,
         "cg": 1.4,
         "champ": 0.5
       },
@@ -639,32 +639,32 @@
         "seed": 10,
         "team": "Texas A&M",
         "rating": 13.3,
-        "r32": 40.8,
-        "r16": 14.3,
-        "e8": 5.9,
-        "f4": 2.0,
-        "cg": 0.7,
-        "champ": 0.2
+        "r32": 100.0,
+        "r16": 28.3,
+        "e8": 11.9,
+        "f4": 3.8,
+        "cg": 1.3,
+        "champ": 0.4
       },
       {
         "seed": 11,
         "team": "VCU",
         "rating": 10.3,
-        "r32": 40.3,
-        "r16": 13.0,
-        "e8": 3.7,
-        "f4": 1.0,
-        "cg": 0.3,
+        "r32": 100.0,
+        "r16": 26.5,
+        "e8": 7.0,
+        "f4": 1.7,
+        "cg": 0.5,
         "champ": 0.1
       },
       {
         "seed": 12,
         "team": "McNeese",
         "rating": 7.3,
-        "r32": 22.8,
-        "r16": 7.6,
-        "e8": 1.5,
-        "f4": 0.2,
+        "r32": 0.0,
+        "r16": 0.0,
+        "e8": 0.0,
+        "f4": 0.0,
         "cg": 0.0,
         "champ": 0.0
       },
@@ -672,9 +672,9 @@
         "seed": 13,
         "team": "Troy",
         "rating": 1.3,
-        "r32": 16.0,
-        "r16": 2.7,
-        "e8": 0.4,
+        "r32": 0.0,
+        "r16": 0.0,
+        "e8": 0.0,
         "f4": 0.0,
         "cg": 0.0,
         "champ": 0.0
@@ -683,9 +683,9 @@
         "seed": 14,
         "team": "Pennsylvania",
         "rating": -0.3,
-        "r32": 9.0,
-        "r16": 1.5,
-        "e8": 0.2,
+        "r32": 0.0,
+        "r16": 0.0,
+        "e8": 0.0,
         "f4": 0.0,
         "cg": 0.0,
         "champ": 0.0
@@ -694,18 +694,18 @@
         "seed": 15,
         "team": "Idaho",
         "rating": 3.9,
-        "r32": 11.1,
-        "r16": 2.6,
-        "e8": 0.6,
-        "f4": 0.1,
+        "r32": 0.0,
+        "r16": 0.0,
+        "e8": 0.0,
+        "f4": 0.0,
         "cg": 0.0,
         "champ": 0.0
       },
       {
         "seed": 16,
-        "team": "Lehigh Mountain",
-        "rating": -9.9,
-        "r32": 2.1,
+        "team": "Prairie View A&M",
+        "rating": -11.5,
+        "r32": 1.8,
         "r16": 0.1,
         "e8": 0.0,
         "f4": 0.0,
@@ -719,7 +719,7 @@
       "seed": 1,
       "team": "Duke",
       "region": "East",
-      "champ": 11.8
+      "champ": 11.9
     },
     {
       "seed": 1,
@@ -731,31 +731,43 @@
       "seed": 1,
       "team": "Michigan",
       "region": "Midwest",
-      "champ": 10.8
+      "champ": 11.0
     },
     {
       "seed": 1,
       "team": "Florida",
       "region": "South",
-      "champ": 10.1
-    },
-    {
-      "seed": 2,
-      "team": "Purdue",
-      "region": "West",
-      "champ": 5.9
+      "champ": 9.4
     },
     {
       "seed": 2,
       "team": "Houston",
       "region": "South",
+      "champ": 6.3
+    },
+    {
+      "seed": 3,
+      "team": "Gonzaga",
+      "region": "West",
       "champ": 5.4
+    },
+    {
+      "seed": 2,
+      "team": "Purdue",
+      "region": "West",
+      "champ": 5.0
+    },
+    {
+      "seed": 4,
+      "team": "Arkansas",
+      "region": "West",
+      "champ": 4.5
     },
     {
       "seed": 2,
       "team": "Iowa State",
       "region": "Midwest",
-      "champ": 4.6
+      "champ": 4.4
     },
     {
       "seed": 3,
@@ -764,46 +776,34 @@
       "champ": 4.3
     },
     {
-      "seed": 3,
-      "team": "Gonzaga",
-      "region": "West",
-      "champ": 4.3
-    },
-    {
-      "seed": 4,
-      "team": "Arkansas",
-      "region": "West",
-      "champ": 3.6
-    },
-    {
       "seed": 6,
       "team": "Tennessee",
       "region": "Midwest",
-      "champ": 3.5
+      "champ": 3.9
     },
     {
       "seed": 3,
       "team": "Illinois",
       "region": "South",
-      "champ": 3.3
+      "champ": 3.6
     },
     {
       "seed": 4,
       "team": "Alabama",
       "region": "Midwest",
-      "champ": 3.3
+      "champ": 3.2
     },
     {
       "seed": 5,
       "team": "Vanderbilt",
       "region": "South",
-      "champ": 2.8
+      "champ": 3.2
     },
     {
       "seed": 2,
       "team": "Uconn",
       "region": "East",
-      "champ": 2.2
+      "champ": 2.1
     },
     {
       "seed": 4,
@@ -812,22 +812,16 @@
       "champ": 1.4
     },
     {
+      "seed": 6,
+      "team": "Louisville",
+      "region": "East",
+      "champ": 1.3
+    },
+    {
       "seed": 7,
       "team": "Kentucky",
       "region": "Midwest",
       "champ": 1.1
-    },
-    {
-      "seed": 6,
-      "team": "Louisville",
-      "region": "East",
-      "champ": 1.0
-    },
-    {
-      "seed": 5,
-      "team": "Texas Tech",
-      "region": "Midwest",
-      "champ": 0.9
     },
     {
       "seed": 4,
@@ -837,21 +831,9 @@
     },
     {
       "seed": 5,
-      "team": "Wisconsin",
-      "region": "West",
-      "champ": 0.8
-    },
-    {
-      "seed": 5,
-      "team": "St. John's",
-      "region": "East",
-      "champ": 0.7
-    },
-    {
-      "seed": 6,
-      "team": "BYU",
-      "region": "West",
-      "champ": 0.7
+      "team": "Texas Tech",
+      "region": "Midwest",
+      "champ": 0.9
     },
     {
       "seed": 7,
@@ -860,15 +842,21 @@
       "champ": 0.7
     },
     {
-      "seed": 9,
-      "team": "Utah State",
-      "region": "West",
+      "seed": 5,
+      "team": "St. John's",
+      "region": "East",
       "champ": 0.6
     },
     {
-      "seed": 7,
-      "team": "Saint Mary's",
-      "region": "South",
+      "seed": 9,
+      "team": "Utah State",
+      "region": "West",
+      "champ": 0.5
+    },
+    {
+      "seed": 11,
+      "team": "Texas",
+      "region": "West",
       "champ": 0.5
     },
     {
@@ -878,26 +866,20 @@
       "champ": 0.5
     },
     {
-      "seed": 8,
-      "team": "Ohio State",
+      "seed": 9,
+      "team": "TCU",
       "region": "East",
       "champ": 0.4
     },
     {
       "seed": 10,
-      "team": "Santa Clara",
-      "region": "Midwest",
+      "team": "Texas A&M",
+      "region": "South",
       "champ": 0.4
     },
     {
-      "seed": 6,
-      "team": "North Carolina",
-      "region": "South",
-      "champ": 0.3
-    },
-    {
-      "seed": 11,
-      "team": "SMU",
+      "seed": 10,
+      "team": "Santa Clara",
       "region": "Midwest",
       "champ": 0.3
     },
@@ -908,27 +890,9 @@
       "champ": 0.3
     },
     {
-      "seed": 11,
-      "team": "Texas",
-      "region": "West",
-      "champ": 0.2
-    },
-    {
-      "seed": 8,
-      "team": "Georgia",
-      "region": "Midwest",
-      "champ": 0.2
-    },
-    {
-      "seed": 10,
-      "team": "Texas A&M",
-      "region": "South",
-      "champ": 0.2
-    },
-    {
       "seed": 9,
-      "team": "TCU",
-      "region": "East",
+      "team": "Saint Louis",
+      "region": "Midwest",
       "champ": 0.2
     },
     {
@@ -938,27 +902,15 @@
       "champ": 0.1
     },
     {
-      "seed": 7,
-      "team": "Miami",
-      "region": "West",
-      "champ": 0.1
-    },
-    {
-      "seed": 9,
-      "team": "Saint Louis",
-      "region": "Midwest",
-      "champ": 0.1
-    },
-    {
-      "seed": 8,
-      "team": "Villanova",
-      "region": "West",
-      "champ": 0.1
-    },
-    {
       "seed": 11,
       "team": "VCU",
       "region": "South",
+      "champ": 0.1
+    },
+    {
+      "seed": 7,
+      "team": "Miami",
+      "region": "West",
       "champ": 0.1
     },
     {
@@ -969,13 +921,19 @@
     },
     {
       "seed": 8,
-      "team": "Clemson",
-      "region": "South",
+      "team": "Villanova",
+      "region": "West",
       "champ": 0.1
     },
     {
-      "seed": 11,
-      "team": "South Florida",
+      "seed": 12,
+      "team": "High Point",
+      "region": "West",
+      "champ": 0.1
+    },
+    {
+      "seed": 12,
+      "team": "Northern Iowa",
       "region": "East",
       "champ": 0.1
     }
