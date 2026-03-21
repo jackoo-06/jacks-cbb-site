@@ -91,7 +91,7 @@ const ARTICLES = [
     date: "Mar 22, 2026",
     tag: "PREVIEW",
     readTime: "6 min read",
-    img: "/images/okpara.png"
+    img: "/images/Okpara.png"
   },
 ];
 
