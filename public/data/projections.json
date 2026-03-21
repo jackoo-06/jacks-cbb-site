@@ -1,6 +1,6 @@
 {
-  "date": "Mar 20, 2026",
-  "updated": "06:22 PM MT",
+  "date": "Mar 21, 2026",
+  "updated": "07:37 AM MT",
   "show": true,
   "games": [
     {
@@ -8,10 +8,10 @@
       "team1": "Michigan State",
       "team2": "Louisville",
       "position": "Michigan State",
-      "spread": 7.3,
-      "market": 4.5,
+      "spread": 7.6,
+      "market": 5.0,
       "kelly": 0.0,
-      "ev": 2.2,
+      "ev": 2.0,
       "blowout": 39,
       "units": 0.0,
       "bet": false
@@ -34,10 +34,10 @@
       "team1": "Duke",
       "team2": "TCU",
       "position": "Duke",
-      "spread": 16.5,
-      "market": 12.0,
+      "spread": 16.2,
+      "market": 11.5,
       "kelly": 0.0,
-      "ev": 3.5,
+      "ev": 3.6,
       "blowout": 69,
       "units": 0.0,
       "bet": false
@@ -47,10 +47,10 @@
       "team1": "Illinois",
       "team2": "VCU",
       "position": "Illinois",
-      "spread": 13.8,
-      "market": 10.5,
+      "spread": 14.1,
+      "market": 11.0,
       "kelly": 0.0,
-      "ev": 2.5,
+      "ev": 2.3,
       "blowout": 59,
       "units": 0.0,
       "bet": false
@@ -122,6 +122,32 @@
     },
     {
       "id": 10,
+      "team1": "Florida",
+      "team2": "Iowa",
+      "position": "Florida",
+      "spread": 11.2,
+      "market": 10.5,
+      "kelly": 0.0,
+      "ev": -0.3,
+      "blowout": 39,
+      "units": 0.0,
+      "bet": true
+    },
+    {
+      "id": 11,
+      "team1": "Uconn",
+      "team2": "UCLA",
+      "position": "Uconn",
+      "spread": 5.4,
+      "market": 4.0,
+      "kelly": 0.0,
+      "ev": 0.5,
+      "blowout": 25,
+      "units": 0.0,
+      "bet": false
+    },
+    {
+      "id": 12,
       "team1": "Tennessee",
       "team2": "Virginia",
       "position": "Tennessee",
@@ -134,7 +160,20 @@
       "bet": true
     },
     {
-      "id": 11,
+      "id": 13,
+      "team1": "Purdue",
+      "team2": "Miami",
+      "position": "Purdue",
+      "spread": 12.6,
+      "market": 7.5,
+      "kelly": 4.5,
+      "ev": 4.3,
+      "blowout": 64,
+      "units": 0.673,
+      "bet": true
+    },
+    {
+      "id": 14,
       "team1": "Iowa State",
       "team2": "Kentucky",
       "position": "Iowa State",
@@ -147,7 +186,20 @@
       "bet": false
     },
     {
-      "id": 12,
+      "id": 15,
+      "team1": "St. John's",
+      "team2": "Kansas",
+      "position": "St. John's",
+      "spread": 3.2,
+      "market": 3.5,
+      "kelly": 0.0,
+      "ev": -0.7,
+      "blowout": 8,
+      "units": 0.0,
+      "bet": false
+    },
+    {
+      "id": 16,
       "team1": "Arizona",
       "team2": "Utah State",
       "position": "Arizona",
