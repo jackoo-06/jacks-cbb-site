@@ -1,6 +1,6 @@
 {
   "date": "Mar 21, 2026",
-  "updated": "07:37 AM MT",
+  "updated": "07:39 AM MT",
   "show": true,
   "games": [
     {
@@ -131,7 +131,7 @@
       "ev": -0.3,
       "blowout": 39,
       "units": 0.0,
-      "bet": true
+      "bet": false
     },
     {
       "id": 11,
