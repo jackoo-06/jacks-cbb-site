@@ -1,6 +1,6 @@
 {
   "date": "Mar 21, 2026",
-  "updated": "07:39 AM MT",
+  "updated": "03:02 PM MT",
   "show": true,
   "games": [
     {
@@ -112,10 +112,10 @@
       "team1": "Alabama",
       "team2": "Texas Tech",
       "position": "Alabama",
-      "spread": 4.1,
-      "market": 1.0,
+      "spread": 2.5,
+      "market": -1.5,
       "kelly": 0.0,
-      "ev": 2.6,
+      "ev": 3.6,
       "blowout": 32,
       "units": 0.0,
       "bet": false
