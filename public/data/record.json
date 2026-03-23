@@ -1,11 +1,11 @@
 {
   "summary": {
-    "w": 11,
+    "w": 13,
     "l": 8,
-    "roi": 0.078716,
-    "clv": 0.021311,
-    "last10w": 8,
-    "last10l": 2
+    "roi": 0.112023,
+    "clv": 0.021951,
+    "last10w": 9,
+    "last10l": 1
   },
   "history": [
     {
@@ -215,6 +215,28 @@
       "runningProfit": 1.242284,
       "clv": 0.044746,
       "runningCLV": 0.021311,
+      "season": "2025-26"
+    },
+    {
+      "date": "03/22/2026",
+      "matchup": "PUR/MIA",
+      "result": "W",
+      "stake": 0.6732,
+      "profit": 0.601071,
+      "runningProfit": 1.843356,
+      "clv": 0.013258,
+      "runningCLV": 0.020909,
+      "season": "2025-26"
+    },
+    {
+      "date": "03/22/2026",
+      "matchup": "TENN/UVA",
+      "result": "W",
+      "stake": 0.87,
+      "profit": 0.769912,
+      "runningProfit": 2.613267,
+      "clv": 0.042789,
+      "runningCLV": 0.021951,
       "season": "2025-26"
     }
   ]
