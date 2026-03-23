@@ -82,9 +82,11 @@
       "odds": "+281",
       "staked": 0.65,
       "currentOdds": "+281",
-      "status": "open",
+      "status": "closed",
       "date": "03/16/2025",
-      "notes": ""
+      "notes": "",
+      "result": "L",
+      "pnl": -0.65
     },
     {
       "id": 8,
