@@ -1,6 +1,6 @@
 {
   "date": "Mar 23, 2026",
-  "updated": "06:54 AM MT",
+  "updated": "06:58 PM MT",
   "show": true,
   "games": [
     {
@@ -34,10 +34,10 @@
       "team1": "Nebraska",
       "team2": "Iowa",
       "position": "Nebraska",
-      "spread": 6.2,
-      "market": 3.0,
+      "spread": 5.6,
+      "market": 2.0,
       "kelly": 0.0,
-      "ev": 2.7,
+      "ev": 3.1,
       "blowout": 39,
       "units": 0.0,
       "bet": false
@@ -47,10 +47,10 @@
       "team1": "Purdue",
       "team2": "Texas",
       "position": "Purdue",
-      "spread": 9.8,
-      "market": 7.5,
+      "spread": 9.4,
+      "market": 7.0,
       "kelly": 0.0,
-      "ev": 1.6,
+      "ev": 1.8,
       "blowout": 44,
       "units": 0.0,
       "bet": false
@@ -60,10 +60,10 @@
       "team1": "Duke",
       "team2": "St. John's",
       "position": "Duke",
-      "spread": 11.2,
-      "market": 7.0,
+      "spread": 10.9,
+      "market": 6.5,
       "kelly": 0.0,
-      "ev": 3.6,
+      "ev": 3.7,
       "blowout": 57,
       "units": 0.0,
       "bet": false
@@ -86,12 +86,12 @@
       "team1": "Michigan State",
       "team2": "Uconn",
       "position": "Michigan State",
-      "spread": 3.4,
-      "market": -1.0,
-      "kelly": 4.5,
-      "ev": 4.0,
+      "spread": 2.7,
+      "market": -2.0,
+      "kelly": 4.8,
+      "ev": 4.4,
       "blowout": 37,
-      "units": 0.681,
+      "units": 0.715,
       "bet": true
     },
     {
