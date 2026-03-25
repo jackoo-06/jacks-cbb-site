@@ -68,6 +68,7 @@ PROJ_EV = "EV %"
 PROJ_BLOWOUT = "Blowout Potential"
 PROJ_MARKET = "Market Spread"
 PROJ_BET = "Bet"
+PROJ_ODDS = "Odds"
 PROJ_UNITS = "Units"
 
 # Rankings tab:
@@ -167,6 +168,7 @@ def export_projections(wb):
         units_raw = to_float(col(r, PROJ_UNITS))         # raw number
         bet_raw = col(r, PROJ_BET)                        # "Yes" or "No"
         is_bet = str(bet_raw).strip().lower() == "yes" if bet_raw else False
+        odds_raw = col (r, PROJ_ODDS)
         position_raw = col(r, PROJ_POSITION)
         position = str(position_raw).strip() if position_raw else ""
 
@@ -182,6 +184,7 @@ def export_projections(wb):
             "blowout": round(blowout_raw * 100),
             "units": round(units_raw, 3),
             "bet": is_bet,
+	    "odds": int(float(odds_raw)) if odds_raw and is_bet else None,
         })
 
     print(f"   ✅ Projections: {len(games)} games")
