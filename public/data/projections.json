@@ -1,6 +1,6 @@
 {
-  "date": "Mar 24, 2026",
-  "updated": "06:11 PM MT",
+  "date": "Mar 25, 2026",
+  "updated": "05:23 PM MT",
   "show": true,
   "games": [
     {
@@ -78,14 +78,14 @@
       "team1": "Tennessee",
       "team2": "Iowa State",
       "position": "Tennessee",
-      "spread": 0.5,
+      "spread": 0.2,
       "market": -4.0,
-      "kelly": 0.0,
-      "ev": 4.2,
+      "kelly": 4.8,
+      "ev": 4.4,
       "blowout": 29,
-      "units": 0.0,
-      "bet": false,
-      "odds": null
+      "units": 0.713,
+      "bet": true,
+      "odds": -111
     },
     {
       "id": 7,
