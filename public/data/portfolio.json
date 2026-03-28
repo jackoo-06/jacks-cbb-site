@@ -73,7 +73,7 @@
       "team": "Tennessee",
       "odds": "+1725",
       "staked": 0.45,
-      "currentOdds": "+698",
+      "currentOdds": "+265",
       "status": "open",
       "date": "03/15/2025",
       "notes": ""
@@ -147,6 +147,18 @@
       "notes": "",
       "result": "L",
       "pnl": -1.06
+    },
+    {
+      "id": 12,
+      "season": "2025-26",
+      "category": "MIDWEST REGION WINNER",
+      "team": "Tennessee",
+      "odds": "-324",
+      "staked": 6.276,
+      "currentOdds": "-324",
+      "status": "open",
+      "date": "03/15/2025",
+      "notes": "Hedge Tennesse Region Position; lock in 1.47 units"
     }
   ]
 }
