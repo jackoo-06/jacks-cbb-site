@@ -7,7 +7,7 @@
       "team": "Arizona",
       "odds": "+2800",
       "staked": 1.111,
-      "currentOdds": "+345",
+      "currentOdds": "+171",
       "status": "open",
       "date": "05/02/2025",
       "notes": ""
@@ -33,7 +33,7 @@
       "team": "Illinois",
       "odds": "+7000",
       "staked": 0.45,
-      "currentOdds": "+1455",
+      "currentOdds": "+403",
       "status": "open",
       "date": "04/25/2025",
       "notes": ""
@@ -74,9 +74,11 @@
       "odds": "+1725",
       "staked": 0.45,
       "currentOdds": "+265",
-      "status": "open",
+      "status": "closed",
       "date": "03/15/2025",
-      "notes": ""
+      "notes": "",
+      "result": "L",
+      "pnl": -0.45
     },
     {
       "id": 7,
@@ -156,9 +158,11 @@
       "odds": "-324",
       "staked": 6.276,
       "currentOdds": "-324",
-      "status": "open",
+      "status": "closed",
       "date": "03/15/2025",
-      "notes": "Hedge Tennesse Region Position; lock in 1.47 units"
+      "notes": "Hedge Tennesse Region Position; lock in 1.47 units",
+      "result": "W",
+      "pnl": 1.94
     }
   ]
 }
