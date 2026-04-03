@@ -8,9 +8,11 @@
       "odds": "+2800",
       "staked": 1.111,
       "currentOdds": "+171",
-      "status": "open",
+      "status": "closed",
       "date": "05/02/2025",
-      "notes": ""
+      "notes": "Hedged position to lock in 7.5 units",
+      "result": "W",
+      "pnl": 7.5
     },
     {
       "id": 2,
@@ -34,9 +36,11 @@
       "odds": "+7000",
       "staked": 0.45,
       "currentOdds": "+403",
-      "status": "open",
+      "status": "closed",
       "date": "04/25/2025",
-      "notes": ""
+      "notes": "Hedged position to lock in 7.5 units",
+      "result": "W",
+      "pnl": 7.5
     },
     {
       "id": 4,
