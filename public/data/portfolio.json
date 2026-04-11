@@ -65,7 +65,7 @@
       "staked": 0.85,
       "currentOdds": "+468",
       "status": "closed",
-      "date": "03/15/2025",
+      "date": "03/15/2026",
       "notes": "",
       "result": "L",
       "pnl": -0.85
@@ -79,7 +79,7 @@
       "staked": 0.45,
       "currentOdds": "+265",
       "status": "closed",
-      "date": "03/15/2025",
+      "date": "03/15/2026",
       "notes": "",
       "result": "L",
       "pnl": -0.45
@@ -93,7 +93,7 @@
       "staked": 0.65,
       "currentOdds": "+281",
       "status": "closed",
-      "date": "03/16/2025",
+      "date": "03/16/2026",
       "notes": "",
       "result": "L",
       "pnl": -0.65
@@ -107,7 +107,7 @@
       "staked": 1.0,
       "currentOdds": "+155",
       "status": "closed",
-      "date": "03/16/2025",
+      "date": "03/16/2026",
       "notes": "",
       "result": "W",
       "pnl": 1.55
@@ -121,7 +121,7 @@
       "staked": 0.5,
       "currentOdds": "+111",
       "status": "closed",
-      "date": "03/16/2025",
+      "date": "03/16/2026",
       "notes": "",
       "result": "W",
       "pnl": 0.56
@@ -135,7 +135,7 @@
       "staked": 1.44,
       "currentOdds": "-144",
       "status": "closed",
-      "date": "03/16/2025",
+      "date": "03/16/2026",
       "notes": "",
       "result": "W",
       "pnl": 1.0
@@ -149,7 +149,7 @@
       "staked": 1.065,
       "currentOdds": "-142",
       "status": "closed",
-      "date": "03/16/2025",
+      "date": "03/16/2026",
       "notes": "",
       "result": "L",
       "pnl": -1.06
@@ -163,10 +163,22 @@
       "staked": 6.276,
       "currentOdds": "-324",
       "status": "closed",
-      "date": "03/15/2025",
+      "date": "03/15/2026",
       "notes": "Hedge Tennesse Region Position; lock in 1.47 units",
       "result": "W",
       "pnl": 1.94
+    },
+    {
+      "id": 13,
+      "season": "2026-27",
+      "category": "TITLE",
+      "team": "Texas",
+      "odds": "+6000",
+      "staked": 0.667,
+      "currentOdds": "-",
+      "status": "open",
+      "date": "04/11/2026",
+      "notes": ""
     }
   ]
 }
