@@ -179,6 +179,18 @@
       "status": "open",
       "date": "04/11/2026",
       "notes": ""
+    },
+    {
+      "id": 14,
+      "season": "2026-27",
+      "category": "TITLE",
+      "team": "USC",
+      "odds": "+8000",
+      "staked": 0.5,
+      "currentOdds": "-",
+      "status": "open",
+      "date": "04/15/2026",
+      "notes": ""
     }
   ]
 }
