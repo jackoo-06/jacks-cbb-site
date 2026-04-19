@@ -191,6 +191,18 @@
       "status": "open",
       "date": "04/15/2026",
       "notes": ""
+    },
+    {
+      "id": 15,
+      "season": "2026-27",
+      "category": "TITLE",
+      "team": "Gonzaga",
+      "odds": "+3500",
+      "staked": 1.143,
+      "currentOdds": "-",
+      "status": "open",
+      "date": "04/18/2026",
+      "notes": ""
     }
   ]
 }
