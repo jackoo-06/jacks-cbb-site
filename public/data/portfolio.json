@@ -203,6 +203,18 @@
       "status": "open",
       "date": "04/18/2026",
       "notes": ""
+    },
+    {
+      "id": 16,
+      "season": "2026-27",
+      "category": "TITLE",
+      "team": "Alabama",
+      "odds": "+3000",
+      "staked": 1.334,
+      "currentOdds": "-",
+      "status": "open",
+      "date": "04/20/2026",
+      "notes": ""
     }
   ]
 }
