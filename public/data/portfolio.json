@@ -215,6 +215,18 @@
       "status": "open",
       "date": "04/20/2026",
       "notes": ""
+    },
+    {
+      "id": 17,
+      "season": "2026-27",
+      "category": "WOODEN AWARD WINNER",
+      "team": "Braden Huff",
+      "odds": "+6000",
+      "staked": 0.3,
+      "currentOdds": "+6000",
+      "status": "open",
+      "date": "07/01/2026",
+      "notes": ""
     }
   ]
 }
