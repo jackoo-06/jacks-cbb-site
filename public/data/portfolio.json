@@ -175,7 +175,7 @@
       "team": "Texas",
       "odds": "+6000",
       "staked": 0.667,
-      "currentOdds": "-",
+      "currentOdds": "+1600",
       "status": "open",
       "date": "04/11/2026",
       "notes": ""
@@ -187,7 +187,7 @@
       "team": "USC",
       "odds": "+8000",
       "staked": 0.5,
-      "currentOdds": "-",
+      "currentOdds": "+5000",
       "status": "open",
       "date": "04/15/2026",
       "notes": ""
@@ -199,7 +199,7 @@
       "team": "Gonzaga",
       "odds": "+3500",
       "staked": 1.143,
-      "currentOdds": "-",
+      "currentOdds": "+3500",
       "status": "open",
       "date": "04/18/2026",
       "notes": ""
@@ -211,7 +211,7 @@
       "team": "Alabama",
       "odds": "+3000",
       "staked": 1.334,
-      "currentOdds": "-",
+      "currentOdds": "+4000",
       "status": "open",
       "date": "04/20/2026",
       "notes": ""
@@ -226,6 +226,30 @@
       "currentOdds": "+6000",
       "status": "open",
       "date": "07/01/2026",
+      "notes": ""
+    },
+    {
+      "id": 18,
+      "season": "2026-27",
+      "category": "WOODEN AWARD WINNER",
+      "team": "Robert Wright",
+      "odds": "+5000",
+      "staked": 0.8,
+      "currentOdds": "+5000",
+      "status": "open",
+      "date": "08/22/2026",
+      "notes": ""
+    },
+    {
+      "id": 19,
+      "season": "2026-27",
+      "category": "TITLE",
+      "team": "Vanderbilt",
+      "odds": "+6500",
+      "staked": 0.8,
+      "currentOdds": "+6500",
+      "status": "open",
+      "date": "08/23/2026",
       "notes": ""
     }
   ]
