@@ -663,7 +663,7 @@ function Rankings() {
                             const rightPct = ((r.p95 - minVal) / range) * 100;
                             const dotPct = ((r.rating - minVal) / range) * 100;
                             return (
-                              <div style={{ position: "relative", height: 16, width: "100%" }}>
+                              <div style={{ position: "relative", height: 13, width: "100%" }}>
                                 <div style={{
                                   position: "absolute", top: 6, left: `${leftPct}%`, width: `${rightPct - leftPct}%`,
                                   height: 4, background: C.accentDim, borderRadius: 2,
@@ -673,10 +673,10 @@ function Rankings() {
                                   width: 10, height: 10, borderRadius: "50%", background: C.accent, border: `2px solid ${C.surface}`,
                                 }} />
                                 <div style={{
-                                  position: "absolute", top: -10, left: `${leftPct}%`, fontFamily: font.mono, fontSize: 8, color: C.textMuted,
+                                  position: "absolute", top: 18, left: `${leftPct}%`, fontFamily: font.mono, fontSize: 8, color: C.textMuted,
                                 }}>{r.p25.toFixed(1)}</div>
                                 <div style={{
-                                  position: "absolute", top: -10, right: `${100 - rightPct}%`, fontFamily: font.mono, fontSize: 8, color: C.textMuted,
+                                  position: "absolute", top: 18, right: `${100 - rightPct}%`, fontFamily: font.mono, fontSize: 8, color: C.textMuted,
                                 }}>{r.p95.toFixed(1)}</div>
                               </div>
                             );
