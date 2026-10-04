@@ -610,7 +610,7 @@ function Rankings() {
           <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: font.mono, fontSize: 12 }}>
             <thead>
               <tr style={{ borderBottom: `1px solid ${C.border}` }}>
-                  {["RK", "LW", "", "TEAM", "RATING", showBars > 0 ? "25th - 90th PCTL" : ""].filter(Boolean).map((h, i) => (
+                  {["RK", "LW", " ", "TEAM", "RATING", showBars > 0 ? "25th - 90th PCTL" : ""].filter(Boolean).map((h, i) => (
                   <th key={i} style={{
                                         padding: "8px 8px", textAlign: (h === "RATING" || h === "25th - 90th PCTL") ? "right" : "left",
                     width: h === "25th - 90th PCTL" ? 180 : undefined,
