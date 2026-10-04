@@ -656,28 +656,23 @@ function Rankings() {
 		                            {showBars > 0 && rank <= showBars && (
                         <td style={{ padding: "8px 8px", width: 180 }}>
                           {r.p25 && r.p95 ? (() => {
-                            const allTeams = rankData.teams || [];
-                            const minVal = Math.min(...allTeams.filter(t => t.p25).map(t => t.p25));
-                            const maxVal = Math.max(...allTeams.filter(t => t.p95).map(t => t.p95));
-                            const range = maxVal - minVal || 1;
-                            const leftPct = ((r.p25 - minVal) / range) * 100;
-                            const rightPct = ((r.p95 - minVal) / range) * 100;
-                            const dotPct = ((r.rating - minVal) / range) * 100;
+                                                        const barRange = r.p95 - r.p25 || 1;
+                            const dotPct = ((r.rating - r.p25) / barRange) * 100;
                             return (
                               <div style={{ position: "relative", height: 13, width: "100%" }}>
-                                <div style={{
-                                  position: "absolute", top: 6, left: `${leftPct}%`, width: `${rightPct - leftPct}%`,
+                                                                <div style={{
+                                  position: "absolute", top: 6, left: 0, width: "100%",
                                   height: 4, background: C.accentDim, borderRadius: 2,
                                 }} />
                                 <div style={{
                                   position: "absolute", top: 3, left: `${dotPct}%`, transform: "translateX(-50%)",
                                   width: 10, height: 10, borderRadius: "50%", background: C.accent, border: `2px solid ${C.surface}`,
                                 }} />
-                                <div style={{
-                                  position: "absolute", top: 18, left: `${leftPct}%`, fontFamily: font.mono, fontSize: 8, color: C.textMuted,
+                                                                <div style={{
+                                  position: "absolute", top: 18, left: 0, fontFamily: font.mono, fontSize: 8, color: C.textMuted,
                                 }}>{r.p25.toFixed(1)}</div>
-                                <div style={{
-                                  position: "absolute", top: 18, right: `${100 - rightPct}%`, fontFamily: font.mono, fontSize: 8, color: C.textMuted,
+                                                                <div style={{
+                                  position: "absolute", top: 18, right: 0, fontFamily: font.mono, fontSize: 8, color: C.textMuted,
                                 }}>{r.p95.toFixed(1)}</div>
                               </div>
                             );
