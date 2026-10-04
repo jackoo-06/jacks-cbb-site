@@ -73,7 +73,7 @@ RANK_RATING = "Rating"
 RANK_RANK = "New Rank"
 RANK_LAST = "Last Rank"
 RANK_P25 = "P25"
-RANK_P95 = "P95"
+RANK_P95 = "P90"
 
 # Portfolio tab:
 #   Season | Category | Team | Odds | Stake | Current Odds | Status | Date | Notes | Result | PnL
