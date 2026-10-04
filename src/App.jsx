@@ -612,7 +612,7 @@ function Rankings() {
               <tr style={{ borderBottom: `1px solid ${C.border}` }}>
                   {["RK", "LW", "", "TEAM", "RATING", showBars > 0 ? "25th - 90th PCTL" : ""].filter(Boolean).map((h, i) => (
                   <th key={i} style={{
-                    padding: "8px 8px", textAlign: (h === "RATING" || h === "25th - 90th PCTL"") ? "right" : "left",
+                    padding: "8px 8px", textAlign: (h === "RATING" || h === "25th - 90th PCTL") ? "right" : "left",
                     fontWeight: 400, fontSize: 10, color: C.textMuted, letterSpacing: "0.05em", whiteSpace: "nowrap",
                   }}>{h}</th>
                 ))}
