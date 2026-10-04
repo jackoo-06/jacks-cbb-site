@@ -523,6 +523,7 @@ function Rankings() {
   const [search, setSearch] = useState("");
   const [confFilter, setConfFilter] = useState("ALL");
   const [rankData, loading] = useData("rankings.json", SAMPLE_RANKINGS);
+  const showBars = rankData.showBars || 0;
 
   const allTeams = rankData.teams || [];
 
@@ -609,9 +610,9 @@ function Rankings() {
           <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: font.mono, fontSize: 12 }}>
             <thead>
               <tr style={{ borderBottom: `1px solid ${C.border}` }}>
-                {["RK", "LW", "", "TEAM", "RATING"].map((h, i) => (
+                  {["RK", "LW", "", "TEAM", "RATING", showBars > 0 ? "RANGE" : ""].filter(Boolean).map((h, i) => (
                   <th key={i} style={{
-                    padding: "8px 8px", textAlign: i >= 4 ? "right" : "left",
+                    padding: "8px 8px", textAlign: (h === "RATING" || h === "RANGE") ? "right" : "left",
                     fontWeight: 400, fontSize: 10, color: C.textMuted, letterSpacing: "0.05em", whiteSpace: "nowrap",
                   }}>{h}</th>
                 ))}
@@ -625,14 +626,14 @@ function Rankings() {
                 return (
                   <React.Fragment key={i}>
                     {showBreak25 && (
-                      <tr><td colSpan={5} style={{
+                      <tr><td colSpan={showBars > 0 ? 6 : 5} style={{
                         padding: "6px 8px", fontFamily: font.mono, fontSize: 9,
                         color: C.accent, letterSpacing: "0.1em", background: C.accentDim,
                         borderTop: `1px solid ${C.accent}`, borderBottom: `1px solid ${C.accent}`,
                       }}>BELOW TOP 25</td></tr>
                     )}
                     {showBreak68 && (
-                      <tr><td colSpan={5} style={{
+                      <tr><td colSpan={showBars > 0 ? 6 : 5} style={{
                         padding: "6px 8px", fontFamily: font.mono, fontSize: 9,
                         color: C.textMuted, letterSpacing: "0.1em",
                         borderTop: `2px solid ${C.border}`, borderBottom: `1px solid ${C.border}`,
@@ -651,6 +652,40 @@ function Rankings() {
                       </td>
                       <td style={{ padding: "8px 8px", color: rank <= 25 ? C.white : rank <= 68 ? C.text : C.textDim, fontWeight: rank <= 25 ? 500 : 400 }}>{r.team}</td>
                       <td style={{ padding: "8px 8px", textAlign: "right", color: C.text }}>{r.rating.toFixed(3)}</td>
+		                            {showBars > 0 && rank <= showBars && (
+                        <td style={{ padding: "8px 8px", width: 180 }}>
+                          {r.p25 && r.p95 ? (() => {
+                            const allTeams = rankData.teams || [];
+                            const minVal = Math.min(...allTeams.filter(t => t.p25).map(t => t.p25));
+                            const maxVal = Math.max(...allTeams.filter(t => t.p95).map(t => t.p95));
+                            const range = maxVal - minVal || 1;
+                            const leftPct = ((r.p25 - minVal) / range) * 100;
+                            const rightPct = ((r.p95 - minVal) / range) * 100;
+                            const dotPct = ((r.rating - minVal) / range) * 100;
+                            return (
+                              <div style={{ position: "relative", height: 16, width: "100%" }}>
+                                <div style={{
+                                  position: "absolute", top: 6, left: `${leftPct}%`, width: `${rightPct - leftPct}%`,
+                                  height: 4, background: C.accentDim, borderRadius: 2,
+                                }} />
+                                <div style={{
+                                  position: "absolute", top: 3, left: `${dotPct}%`, transform: "translateX(-50%)",
+                                  width: 10, height: 10, borderRadius: "50%", background: C.accent, border: `2px solid ${C.surface}`,
+                                }} />
+                                <div style={{
+                                  position: "absolute", top: -10, left: `${leftPct}%`, fontFamily: font.mono, fontSize: 8, color: C.textMuted,
+                                }}>{r.p25.toFixed(1)}</div>
+                                <div style={{
+                                  position: "absolute", top: -10, right: `${100 - rightPct}%`, fontFamily: font.mono, fontSize: 8, color: C.textMuted,
+                                }}>{r.p95.toFixed(1)}</div>
+                              </div>
+                            );
+                          })() : null}
+                        </td>
+                      )}
+                      {showBars > 0 && rank > showBars && (
+                        <td style={{ padding: "8px 8px" }} />
+                      )}	
                     </tr>
                   </React.Fragment>
                 );
