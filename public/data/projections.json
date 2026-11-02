@@ -1,6 +1,6 @@
 {
   "date": "Nov 01, 2026",
-  "updated": "08:12 PM MT",
+  "updated": "08:14 PM MT",
   "show": true,
   "games": [
     {
@@ -246,7 +246,7 @@
       "team1": "Liberty",
       "team2": "High Point",
       "position": "Liberty",
-      "spread": -3.1,
+      "spread": -1.2,
       "market": -9.5,
       "kelly": 8.0,
       "ev": 6.3,
