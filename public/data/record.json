@@ -3,7 +3,7 @@
     "w": 14,
     "l": 9,
     "roi": 0.135448,
-    "clv": 0.021876,
+    "clv": -0.000251,
     "last10w": 8,
     "last10l": 2
   },
@@ -260,6 +260,28 @@
       "clv": 0.03995,
       "runningCLV": 0.021876,
       "season": "2025-26"
+    },
+    {
+      "date": "11/01/2026",
+      "matchup": "LIB/HPT",
+      "result": null,
+      "stake": 1.193,
+      "profit": 1.10463,
+      "runningProfit": 3.644749,
+      "clv": -0.288481,
+      "runningCLV": 0.008944,
+      "season": "2026-27"
+    },
+    {
+      "date": "11/02/2026",
+      "matchup": "ORU/CARK",
+      "result": null,
+      "stake": 1.2235,
+      "profit": 1.19951,
+      "runningProfit": 4.844259,
+      "clv": -0.22095,
+      "runningCLV": -0.000251,
+      "season": "2026-27"
     }
   ]
 }
